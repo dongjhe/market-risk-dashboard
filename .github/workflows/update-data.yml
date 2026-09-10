@@ -1,6 +1,11 @@
 name: Update market data
 on:
   workflow_dispatch:
+    inputs:
+      ark_value:
+        description: 'Optional Ark risk value (0-100)'
+        required: false
+        type: string
   schedule:
     # 10:00 UTC = 18:00 Asia/Taipei, weekdays
     - cron: '0 10 * * 1-5'
@@ -22,14 +27,13 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
-
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-
-      - name: Fetch latest market data
+      - name: Fetch latest market data / save Ark value
+        env:
+          ARK_VALUE: ${{ inputs.ark_value }}
         run: node scripts/update-market-data.mjs
-
       - name: Commit history
         run: |
           if git diff --quiet data/history.json; then
@@ -41,15 +45,12 @@ jobs:
             git commit -m "data: update market indicators"
             git push
           fi
-
       - name: Configure Pages
         uses: actions/configure-pages@v5
-
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: '.'
-
       - name: Deploy Pages
         id: deployment
         uses: actions/deploy-pages@v4
