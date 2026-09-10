@@ -10,6 +10,13 @@
   <script src="app.js" defer></script>
 </head>
 <body>
+  <div id="loadingOverlay" class="loading-overlay" aria-live="polite" aria-hidden="true">
+    <div class="loading-card">
+      <div class="spinner"></div>
+      <strong>正在更新最新數據</strong>
+      <span id="loadingText">正在連線市場資料來源…</span>
+    </div>
+  </div>
   <main class="wrap">
     <header>
       <div><p class="eyebrow">MARKET RISK DASHBOARD</p><h1>市場風險儀表板</h1><p class="muted">追蹤台灣與美國市場風險指標，保留每日歷史並比較升降。</p></div>
@@ -18,31 +25,10 @@
         <div class="updated"><span>最後更新</span><strong id="updatedAt">—</strong><small id="refreshStatus">資料來自歷史紀錄</small></div>
       </div>
     </header>
-
-    <section class="summary">
-      <div><span>已取得</span><strong id="availableCount">0</strong></div>
-      <div><span>上升</span><strong id="upCount">0</strong></div>
-      <div><span>下降</span><strong id="downCount">0</strong></div>
-      <div><span>持平</span><strong id="flatCount">0</strong></div>
-    </section>
-
+    <section class="summary"><div><span>已取得</span><strong id="availableCount">0</strong></div><div><span>上升</span><strong id="upCount">0</strong></div><div><span>下降</span><strong id="downCount">0</strong></div><div><span>持平</span><strong id="flatCount">0</strong></div></section>
     <section id="cards" class="cards"></section>
-
-    <section class="panel">
-      <div class="panel-head">
-        <div><h2>歷史趨勢</h2><p class="muted">點選上方任一指標查看走勢。</p></div>
-        <div class="ranges"><button data-range="7" class="active">7日</button><button data-range="30">30日</button><button data-range="90">90日</button><button data-range="all">全部</button></div>
-      </div>
-      <h3 id="chartTitle">—</h3>
-      <div class="chart-box"><canvas id="historyChart"></canvas></div>
-    </section>
-
-    <section class="panel manual">
-      <div><h2>方舟風控運算機</h2><p class="muted">此數值來自方舟運算 App，先以本機瀏覽器保存；不會冒充公開市場資料。</p></div>
-      <form id="riskForm"><input id="riskInput" type="number" min="0" max="100" step="0.01" placeholder="例如 69.1" required><span>%</span><button type="submit">記錄</button></form>
-      <div id="riskHistory" class="manual-history"></div>
-    </section>
-
+    <section class="panel"><div class="panel-head"><div><h2>歷史趨勢</h2><p class="muted">點選上方任一指標查看走勢。</p></div><div class="ranges"><button data-range="7" class="active">7日</button><button data-range="30">30日</button><button data-range="90">90日</button><button data-range="all">全部</button></div></div><h3 id="chartTitle">—</h3><div class="chart-box"><canvas id="historyChart"></canvas></div></section>
+    <section class="panel manual"><div><h2>方舟風控運算機</h2><p class="muted">此數值來自方舟運算 App，先以本機瀏覽器保存；不會冒充公開市場資料。</p></div><form id="riskForm"><input id="riskInput" type="number" min="0" max="100" step="0.01" placeholder="例如 69.1" required><span>%</span><button type="submit">記錄</button></form><div id="riskHistory" class="manual-history"></div></section>
     <footer>資料僅供市場觀察，不構成投資建議。無法取得的資料會顯示「待資料」，不以估值冒充實際值。</footer>
   </main>
 </body>
