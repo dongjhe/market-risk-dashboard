@@ -2,8 +2,8 @@ name: Update market data
 on:
   workflow_dispatch:
   schedule:
-    # 07:30 UTC = 15:30 Asia/Taipei, weekdays
-    - cron: '30 7 * * 1-5'
+    # 10:00 UTC = 18:00 Asia/Taipei, weekdays
+    - cron: '0 10 * * 1-5'
 permissions:
   contents: write
 jobs:
