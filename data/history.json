@@ -1,37 +1,13 @@
 {
-  "updatedAt": "2026-09-10T15:10:00+08:00",
+  "updatedAt": "2026-09-10T16:00:00+08:00",
   "records": [
-    {
-      "date": "2026-09-09",
-      "values": {
-        "vix": 16.46,
-        "putCall": 0.80,
-        "marginMaintenance": null,
-        "foreignFutures": null,
-        "dxy": 98.78,
-        "usdtwd": 31.486,
-        "gold": null,
-        "us2y": null,
-        "us10y": null,
-        "us30y": null,
-        "wti": 94.38
-      }
-    },
-    {
-      "date": "2026-09-10",
-      "values": {
-        "vix": 16.46,
-        "putCall": 0.80,
-        "marginMaintenance": null,
-        "foreignFutures": null,
-        "dxy": 98.80,
-        "usdtwd": 31.501,
-        "gold": null,
-        "us2y": null,
-        "us10y": null,
-        "us30y": null,
-        "wti": 93.79
-      }
-    }
+    {"date":"2026-09-01","values":{"vix":16.34,"putCall":null,"marginMaintenance":null,"foreignFutures":null,"dxy":99.68,"usdtwd":31.707,"gold":4372.50,"us2y":4.18,"us10y":4.79,"us30y":5.27,"wti":90.77}},
+    {"date":"2026-09-02","values":{"vix":15.20,"putCall":null,"marginMaintenance":null,"foreignFutures":null,"dxy":99.56,"usdtwd":31.754,"gold":4434.10,"us2y":4.16,"us10y":4.79,"us30y":5.27,"wti":90.70}},
+    {"date":"2026-09-03","values":{"vix":14.32,"putCall":null,"marginMaintenance":null,"foreignFutures":null,"dxy":98.99,"usdtwd":31.730,"gold":4519.10,"us2y":4.11,"us10y":4.77,"us30y":5.25,"wti":91.71}},
+    {"date":"2026-09-04","values":{"vix":14.53,"putCall":null,"marginMaintenance":null,"foreignFutures":null,"dxy":99.16,"usdtwd":31.636,"gold":4476.60,"us2y":4.13,"us10y":4.78,"us30y":5.24,"wti":91.20}},
+    {"date":"2026-09-07","values":{"vix":null,"putCall":null,"marginMaintenance":null,"foreignFutures":null,"dxy":null,"usdtwd":31.520,"gold":null,"us2y":null,"us10y":null,"us30y":null,"wti":null}},
+    {"date":"2026-09-08","values":{"vix":15.72,"putCall":null,"marginMaintenance":null,"foreignFutures":null,"dxy":98.86,"usdtwd":31.521,"gold":4403.40,"us2y":4.15,"us10y":4.80,"us30y":5.25,"wti":94.28}},
+    {"date":"2026-09-09","values":{"vix":16.46,"putCall":0.80,"marginMaintenance":null,"foreignFutures":null,"dxy":98.81,"usdtwd":31.486,"gold":4443.20,"us2y":4.17,"us10y":4.83,"us30y":5.28,"wti":96.63}},
+    {"date":"2026-09-10","values":{"vix":16.46,"putCall":0.80,"marginMaintenance":null,"foreignFutures":null,"dxy":98.80,"usdtwd":31.501,"gold":null,"us2y":null,"us10y":null,"us30y":null,"wti":93.79}}
   ]
 }
