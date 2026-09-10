@@ -1,37 +1,4 @@
-<!doctype html>
-<html lang="zh-Hant">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="theme-color" content="#061426" />
-  <title>市場風險儀表板</title>
-  <link rel="stylesheet" href="styles.css" />
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js" defer></script>
-  <script src="app.js" defer></script>
-</head>
-<body>
-  <div id="loadingOverlay" class="loading-overlay" aria-live="polite" aria-hidden="true"><div class="loading-card"><div class="spinner"></div><strong>正在更新最新數據</strong><span id="loadingText">正在連線市場資料來源…</span></div></div>
-  <main class="wrap">
-    <header>
-      <div class="brand"><span class="brand-icon">↗</span><div><p class="eyebrow">MARKET RISK DASHBOARD</p><h1>市場風險儀表板</h1><p class="muted">掌握市場風險，做出更好的投資決策</p></div></div>
-      <div class="header-actions"><div class="updated"><span>↻ 最後更新</span><strong id="updatedAt">—</strong><small id="refreshStatus">資料來自歷史紀錄</small></div><button id="refreshBtn" class="refresh-btn" type="button">↻ 更新最新數據</button></div>
-    </header>
-
-    <section class="ark-hero panel">
-      <div class="ark-gauge-wrap">
-        <div id="arkGauge" class="ark-gauge" style="--risk:0"><div class="ark-inner"><span>方舟運算</span><strong id="arkGaugeValue">—</strong><small>持股配置建議</small></div></div>
-      </div>
-      <div class="ark-side">
-        <div class="allocation"><h3>配置區間參考</h3><div><i class="dot safe"></i><span>0–20%</span><b>保守防禦</b></div><div><i class="dot neutral"></i><span>20–60%</span><b>中性配置</b></div><div><i class="dot active"></i><span>60–80%</span><b>積極布局</b></div><div><i class="dot danger"></i><span>80–100%</span><b>高風險警戒</b></div><small>※ 本指標僅供參考，非投資建議</small></div>
-        <form id="riskForm" class="ark-form"><label for="riskInput">更新今日方舟數值</label><div><input id="riskInput" type="number" min="0" max="100" step="0.01" placeholder="例如 74.8" required><span>%</span><button type="submit">記錄</button></div></form>
-        <div id="riskHistory" class="manual-history"></div>
-      </div>
-    </section>
-
-    <section class="summary"><div><span>已取得</span><strong id="availableCount">0</strong></div><div><span>上升</span><strong id="upCount">0</strong></div><div><span>下降</span><strong id="downCount">0</strong></div><div><span>持平</span><strong id="flatCount">0</strong></div></section>
-    <section id="cards" class="cards"></section>
-    <section class="panel trend-panel"><div class="panel-head"><div><h2>歷史趨勢</h2><p class="muted">點選上方任一指標查看走勢。</p></div><div class="ranges"><button data-range="7" class="active">7日</button><button data-range="30">30日</button><button data-range="90">90日</button><button data-range="all">全部</button></div></div><h3 id="chartTitle">—</h3><div class="chart-box"><canvas id="historyChart"></canvas></div></section>
-    <footer>Market Risk Dashboard　｜　數據僅供參考，非投資建議</footer>
-  </main>
-</body>
-</html>
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#061426"/><title>市場風險儀表板</title><link rel="stylesheet" href="styles.css"/><script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js" defer></script><script src="app.js" defer></script></head><body><div id="loadingOverlay" class="loading-overlay" aria-live="polite" aria-hidden="true"><div class="loading-card"><div class="spinner"></div><strong>正在更新最新數據</strong><span id="loadingText">正在連線市場資料來源…</span></div></div><main class="wrap"><header><div class="brand"><span class="brand-icon">↗</span><div><p class="eyebrow">MARKET RISK DASHBOARD</p><h1>市場風險儀表板</h1><p class="muted">掌握市場風險，做出更好的投資決策</p></div></div><div class="header-actions"><div class="updated"><span>↻ 最後更新</span><strong id="updatedAt">—</strong><small id="refreshStatus">資料來自歷史紀錄</small></div><button id="refreshBtn" class="refresh-btn" type="button">↻ 更新最新數據</button></div></header>
+<section class="ark-hero panel"><div class="ark-gauge-wrap"><div id="arkGauge" class="ark-gauge" style="--risk:0"><div class="ark-inner"><span>方舟運算</span><strong id="arkGaugeValue">—</strong><small>持股配置建議</small></div></div></div><div class="ark-side"><details class="allocation" open><summary>配置區間參考 <span>⌄</span></summary><div class="allocation-body"><div><i class="dot safe"></i><span>0–20%</span><b>保守防禦</b></div><div><i class="dot neutral"></i><span>20–60%</span><b>中性配置</b></div><div><i class="dot active"></i><span>60–80%</span><b>積極布局</b></div><div><i class="dot danger"></i><span>80–100%</span><b>高風險警戒</b></div><small>※ 本指標僅供參考，非投資建議</small></div></details><form id="riskForm" class="ark-form"><label for="riskInput">更新今日方舟數值</label><div><input id="riskInput" type="number" min="0" max="100" step="0.01" placeholder="例如 74.8" required><span>%</span><button type="submit">記錄</button></div><small id="arkSaveStatus"></small></form><div id="riskHistory" class="manual-history"></div></div></section>
+<section class="panel ark-trend-panel"><div class="panel-head"><div><h2>方舟運算歷史趨勢</h2><p class="muted">每日只保留一筆，同日重新記錄會覆蓋當日數值。</p></div><div class="ranges ark-ranges"><button data-ark-range="7" class="active">7日</button><button data-ark-range="30">30日</button><button data-ark-range="90">90日</button><button data-ark-range="all">全部</button></div></div><div class="chart-box ark-chart-box"><canvas id="arkHistoryChart"></canvas></div></section>
+<section class="summary"><div><span>已取得</span><strong id="availableCount">0</strong></div><div><span>上升</span><strong id="upCount">0</strong></div><div><span>下降</span><strong id="downCount">0</strong></div><div><span>持平</span><strong id="flatCount">0</strong></div></section><section id="cards" class="cards"></section><section class="panel trend-panel"><div class="panel-head"><div><h2>歷史趨勢</h2><p class="muted">點選上方任一指標查看走勢。</p></div><div class="ranges"><button data-range="7" class="active">7日</button><button data-range="30">30日</button><button data-range="90">90日</button><button data-range="all">全部</button></div></div><h3 id="chartTitle">—</h3><div class="chart-box"><canvas id="historyChart"></canvas></div></section><footer>Market Risk Dashboard　｜　數據僅供參考，非投資建議</footer></main></body></html>
