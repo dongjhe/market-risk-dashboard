@@ -13,7 +13,10 @@
   <main class="wrap">
     <header>
       <div><p class="eyebrow">MARKET RISK DASHBOARD</p><h1>市場風險儀表板</h1><p class="muted">追蹤台灣與美國市場風險指標，保留每日歷史並比較升降。</p></div>
-      <div class="updated"><span>最後更新</span><strong id="updatedAt">—</strong></div>
+      <div class="header-actions">
+        <button id="refreshBtn" class="refresh-btn" type="button">↻ 更新最新數據</button>
+        <div class="updated"><span>最後更新</span><strong id="updatedAt">—</strong><small id="refreshStatus">資料來自歷史紀錄</small></div>
+      </div>
     </header>
 
     <section class="summary">
