@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-14T03:38:34.863Z",
+  "updatedAt": "2026-09-14T06:46:13.864Z",
   "records": [
     {
       "date": "2026-08-31",
@@ -167,13 +167,13 @@
         "putCall": 0.8,
         "marginMaintenance": 184.79,
         "foreignFutures": -85067,
-        "dxy": 99.302,
-        "usdtwd": 31.704,
-        "gold": 4375.4,
+        "dxy": 99.417,
+        "usdtwd": 31.736,
+        "gold": 4371.1,
         "us2y": 4.63,
         "us10y": 4.975,
         "us30y": 5.354,
-        "wti": 103.36,
+        "wti": 102.3,
         "arkRisk": 78.8
       }
     }
