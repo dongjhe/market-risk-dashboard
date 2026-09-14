@@ -10,26 +10,34 @@ const marginBalOf=o=>num(pick(o,['融資今日餘額','今日餘額','本日餘�
 async function json(url){const r=await fetch(url,{headers});if(!r.ok)throw new Error(`${url}: ${r.status}`);return r.json();}
 function dateInZone(d,timezone){return new Intl.DateTimeFormat('sv-SE',{timeZone:timezone,year:'numeric',month:'2-digit',day:'2-digit'}).format(d);}
 function yahooDate(ts,timezone='America/New_York'){return dateInZone(new Date(ts*1000),timezone);}
-function completedYahooDate(meta,now=new Date()){
-  const tz=meta?.exchangeTimezoneName||'America/New_York';
-  const today=dateInZone(now,tz);
-  // At the 08:30 Taipei scheduled run, New York is still on the previous calendar day.
-  // Yahoo may already expose a provisional daily candle for that day. Treat the exchange's
-  // current calendar date as unfinished and accept only dates strictly before it.
-  return {timezone:tz,today};
-}
+function completedYahooDate(meta,now=new Date()){const tz=meta?.exchangeTimezoneName||'America/New_York';return {timezone:tz,today:dateInZone(now,tz)};}
 async function yahooDaily(symbol,range='1mo'){
   for(const host of ['query1.finance.yahoo.com','query2.finance.yahoo.com']){
     try{
       const j=await json(`https://${host}/v8/finance/chart/${symbol}?range=${range}&interval=1d&events=history`);
       const x=j.chart?.result?.[0],timestamps=x?.timestamp||[],closes=x?.indicators?.quote?.[0]?.close||[],meta=x?.meta||{};
       const {timezone,today}=completedYahooDate(meta);
-      const rows=timestamps.map((ts,i)=>({date:yahooDate(ts,timezone),value:num(closes[i])}))
-        .filter(r=>Number.isFinite(r.value)&&r.value>0&&r.date<today);
+      const rows=timestamps.map((ts,i)=>({date:yahooDate(ts,timezone),value:num(closes[i])})).filter(r=>Number.isFinite(r.value)&&r.value>0&&r.date<today);
       if(rows.length)return rows;
     }catch(e){console.warn(`Yahoo ${symbol} ${host}: ${e.message}`);}
   }
   return [];
+}
+function cboeDateParam(date){return date.replaceAll('-','/');}
+async function cboeTotalPutCall(date){
+  const nyToday=dateInZone(new Date(),'America/New_York');
+  if(date>=nyToday)return null;
+  const dow=new Date(`${date}T12:00:00Z`).getUTCDay();
+  if(dow===0||dow===6)return null;
+  const url=`https://www.cboe.com/markets/us/options/market-statistics/daily?dt=${encodeURIComponent(cboeDateParam(date))}`;
+  const r=await fetch(url,{headers:{...headers,Accept:'text/html,application/xhtml+xml'}});
+  if(!r.ok)throw new Error(`Cboe ${date}: ${r.status}`);
+  const t=await r.text();
+  const plain=t.replace(/<script[\s\S]*?<\/script>/gi,' ').replace(/<style[\s\S]*?<\/style>/gi,' ').replace(/<[^>]+>/g,' ').replace(/&nbsp;|&#160;/gi,' ').replace(/\s+/g,' ');
+  const m=plain.match(/TOTAL\s+PUT\s*\/\s*CALL\s+RATIO\s+([0-9]+(?:\.[0-9]+)?)/i);
+  const value=num(m?.[1]);
+  if(!Number.isFinite(value)||value<=0||value>10)throw new Error(`Cboe TOTAL PUT/CALL RATIO not found for ${date}`);
+  return Number(value.toFixed(2));
 }
 async function treasury2y(){const year=new Date().getUTCFullYear();const r=await fetch(`https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=${year}`,{headers});if(!r.ok)return null;const t=await r.text();const vals=[...t.matchAll(/<d:BC_2YEAR[^>]*>([0-9.]+)<\/d:BC_2YEAR>/g)].map(m=>Number(m[1]));return vals.at(-1)??null;}
 async function foreignFutures(){const rows=await json('https://openapi.taifex.com.tw/v1/MarketDataOfMajorInstitutionalTradersDetailsOfFuturesContractsBytheDate');if(!Array.isArray(rows))throw new Error('TAIFEX response is not an array');const row=rows.find(x=>String(x.ContractCode??'').trim()==='臺股期貨'&&String(x.Item??'').trim()==='外資及陸資');if(!row)throw new Error('TAIFEX 臺股期貨 / 外資及陸資 row not found');const value=num(row['OpenInterest(Net)']);if(!Number.isFinite(value))throw new Error('TAIFEX OpenInterest(Net) missing');console.log(`TAIFEX foreign futures date=${row.Date} net=${value}`);return value;}
@@ -44,18 +52,23 @@ if(Number.isFinite(arkValue)){
   const yahooSeries=await Promise.all(Object.entries(symbols).map(async([key,symbol])=>[key,await yahooDaily(symbol,'1mo')]));
   const byDate=new Map(records.map(r=>[r.date,{date:r.date,values:{...(r.values||{})}}]));
   const yahooDatesByKey=new Map();
-  for(const [key,rows] of yahooSeries){
-    yahooDatesByKey.set(key,new Set(rows.map(p=>p.date)));
-    for(const p of rows){if(!byDate.has(p.date))continue;byDate.get(p.date).values[key]=p.value;}
-    const last=rows.at(-1);if(last)console.log(`Yahoo completed daily ${key} date=${last.date} close=${last.value}`);
-  }
+  for(const [key,rows] of yahooSeries){yahooDatesByKey.set(key,new Set(rows.map(p=>p.date)));for(const p of rows){if(!byDate.has(p.date))continue;byDate.get(p.date).values[key]=p.value;}const last=rows.at(-1);if(last)console.log(`Yahoo completed daily ${key} date=${last.date} close=${last.value}`);}
+  // Backfill Cboe Total Put/Call for every stored U.S. trading date. Never carry a stale ratio forward.
+  const nyToday=dateInZone(now,'America/New_York');
+  await Promise.all([...byDate.values()].map(async rec=>{
+    if(rec.date>=nyToday){delete rec.values.putCall;return;}
+    const dow=new Date(`${rec.date}T12:00:00Z`).getUTCDay();
+    if(dow===0||dow===6){delete rec.values.putCall;return;}
+    const pc=await safe(()=>cboeTotalPutCall(rec.date),`Cboe putCall ${rec.date}`);
+    if(Number.isFinite(pc)){rec.values.putCall=pc;console.log(`Cboe Total Put/Call date=${rec.date} ratio=${pc}`);}else delete rec.values.putCall;
+  }));
   records=[...byDate.values()].sort((a,b)=>a.date.localeCompare(b.date));
   const [y2,ff,mm]=await Promise.all([safe(treasury2y,'us2y'),safe(foreignFutures,'foreignFutures'),safe(taiwanMarginMaintenance,'marginMaintenance')]);
   const existing=records.find(x=>x.date===date);const previous=records.at(-1)?.values||{};const values={...previous,...(existing?.values||{})};
-  // Never retain Yahoo data on today's Taipei row unless that exact date is already a completed
-  // exchange-day candle. Also reject zero/invalid closes in yahooDaily().
   for(const key of Object.keys(symbols))if(!yahooDatesByKey.get(key)?.has(date))delete values[key];
+  // Put/Call belongs only to the actual Cboe trading date; do not copy it onto today's dashboard row.
+  const todayPc=await safe(()=>cboeTotalPutCall(date),`Cboe putCall ${date}`);if(Number.isFinite(todayPc))values.putCall=todayPc;else delete values.putCall;
   if(Number.isFinite(y2))values.us2y=y2;if(Number.isFinite(ff))values.foreignFutures=ff;if(Number.isFinite(mm))values.marginMaintenance=mm;
   records=records.filter(x=>x.date!==date);records.push({date,values});
 }
-records=records.sort((a,b)=>a.date.localeCompare(b.date)).slice(-730);await fs.writeFile(FILE,JSON.stringify({updatedAt:now.toISOString(),records},null,2)+'\n');console.log(`Updated ${records.length} records; Yahoo indicators use completed daily closes only.`);
+records=records.sort((a,b)=>a.date.localeCompare(b.date)).slice(-730);await fs.writeFile(FILE,JSON.stringify({updatedAt:now.toISOString(),records},null,2)+'\n');console.log(`Updated ${records.length} records; Yahoo uses completed closes and Put/Call uses Cboe Total P/C by trading date.`);
