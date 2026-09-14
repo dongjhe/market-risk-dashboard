@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-14T03:12:32.520Z",
+  "updatedAt": "2026-09-14T03:30:22.021Z",
   "records": [
     {
       "date": "2026-08-31",
@@ -163,17 +163,17 @@
     {
       "date": "2026-09-14",
       "values": {
-        "vix": 15.99,
+        "vix": 15.84,
         "putCall": 0.8,
-        "marginMaintenance": 190.44,
-        "foreignFutures": -83918,
-        "dxy": 99.044,
-        "usdtwd": 31.581,
-        "gold": 4436,
-        "us2y": 4.56,
-        "us10y": 4.912,
-        "us30y": 5.308,
-        "wti": 98.79,
+        "marginMaintenance": 184.79,
+        "foreignFutures": -85067,
+        "dxy": 99.295,
+        "usdtwd": 31.712,
+        "gold": 4377,
+        "us2y": 4.63,
+        "us10y": 4.975,
+        "us30y": 5.354,
+        "wti": 103.21,
         "arkRisk": 78.8
       }
     }
