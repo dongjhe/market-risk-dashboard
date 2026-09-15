@@ -1,3324 +1,13 @@
 {
-  "updatedAt": "2026-09-15T14:32:25.465Z",
+  "updatedAt": "2026-09-15T14:53:00.615Z",
   "records": [
-    {
-      "date": "2017-07-27",
-      "values": {
-        "putCall": 0.94
-      }
-    },
-    {
-      "date": "2017-07-28",
-      "values": {
-        "putCall": 0.83
-      }
-    },
-    {
-      "date": "2017-07-31",
-      "values": {
-        "putCall": 0.92
-      }
-    },
-    {
-      "date": "2017-08-01",
-      "values": {
-        "putCall": 0.88
-      }
-    },
-    {
-      "date": "2017-08-02",
-      "values": {
-        "putCall": 0.97
-      }
-    },
-    {
-      "date": "2017-08-03",
-      "values": {
-        "putCall": 1.01
-      }
-    },
-    {
-      "date": "2017-08-04",
-      "values": {
-        "putCall": 1
-      }
-    },
-    {
-      "date": "2017-08-07",
-      "values": {
-        "putCall": 0.93
-      }
-    },
-    {
-      "date": "2017-08-08",
-      "values": {
-        "putCall": 0.93
-      }
-    },
-    {
-      "date": "2017-08-09",
-      "values": {
-        "putCall": 1.06
-      }
-    },
-    {
-      "date": "2017-08-10",
-      "values": {
-        "putCall": 0.93
-      }
-    },
-    {
-      "date": "2017-08-11",
-      "values": {
-        "putCall": 0.97
-      }
-    },
-    {
-      "date": "2017-08-14",
-      "values": {
-        "putCall": 0.85
-      }
-    },
-    {
-      "date": "2017-08-15",
-      "values": {
-        "putCall": 0.95
-      }
-    },
-    {
-      "date": "2017-08-16",
-      "values": {
-        "putCall": 0.96
-      }
-    },
-    {
-      "date": "2017-08-17",
-      "values": {
-        "putCall": 1.07
-      }
-    },
-    {
-      "date": "2017-08-18",
-      "values": {
-        "putCall": 1.11
-      }
-    },
-    {
-      "date": "2017-08-21",
-      "values": {
-        "putCall": 0.99
-      }
-    },
-    {
-      "date": "2017-08-22",
-      "values": {
-        "putCall": 1.02
-      }
-    },
-    {
-      "date": "2017-08-23",
-      "values": {
-        "putCall": 0.94
-      }
-    },
-    {
-      "date": "2017-08-24",
-      "values": {
-        "putCall": 1.09
-      }
-    },
-    {
-      "date": "2017-08-25",
-      "values": {
-        "putCall": 1
-      }
-    },
-    {
-      "date": "2017-08-28",
-      "values": {
-        "putCall": 0.93
-      }
-    },
-    {
-      "date": "2017-08-29",
-      "values": {
-        "putCall": 0.77
-      }
-    },
-    {
-      "date": "2017-08-30",
-      "values": {
-        "putCall": 0.83
-      }
-    },
-    {
-      "date": "2017-08-31",
-      "values": {
-        "putCall": 1.06
-      }
-    },
-    {
-      "date": "2017-09-01",
-      "values": {
-        "putCall": 0.83
-      }
-    },
-    {
-      "date": "2017-09-05",
-      "values": {
-        "putCall": 1.17
-      }
-    },
-    {
-      "date": "2017-09-06",
-      "values": {
-        "putCall": 0.95
-      }
-    },
-    {
-      "date": "2017-09-07",
-      "values": {
-        "putCall": 1.13
-      }
-    },
-    {
-      "date": "2017-09-08",
-      "values": {
-        "putCall": 1.09
-      }
-    },
-    {
-      "date": "2017-09-11",
-      "values": {
-        "putCall": 0.93
-      }
-    },
-    {
-      "date": "2017-09-12",
-      "values": {
-        "putCall": 0.84
-      }
-    },
-    {
-      "date": "2017-09-13",
-      "values": {
-        "putCall": 0.81
-      }
-    },
-    {
-      "date": "2017-09-14",
-      "values": {
-        "putCall": 0.79
-      }
-    },
-    {
-      "date": "2017-09-15",
-      "values": {
-        "putCall": 1.08
-      }
-    },
-    {
-      "date": "2017-09-18",
-      "values": {
-        "putCall": 0.92
-      }
-    },
-    {
-      "date": "2017-09-19",
-      "values": {
-        "putCall": 0.76
-      }
-    },
-    {
-      "date": "2017-09-20",
-      "values": {
-        "putCall": 0.88
-      }
-    },
-    {
-      "date": "2017-09-21",
-      "values": {
-        "putCall": 0.84
-      }
-    },
-    {
-      "date": "2017-09-22",
-      "values": {
-        "putCall": 0.98
-      }
-    },
-    {
-      "date": "2017-09-25",
-      "values": {
-        "putCall": 0.7
-      }
-    },
-    {
-      "date": "2017-09-26",
-      "values": {
-        "putCall": 0.94
-      }
-    },
-    {
-      "date": "2017-09-27",
-      "values": {
-        "putCall": 0.83
-      }
-    },
-    {
-      "date": "2017-09-28",
-      "values": {
-        "putCall": 0.73
-      }
-    },
-    {
-      "date": "2017-09-29",
-      "values": {
-        "putCall": 1.05
-      }
-    },
-    {
-      "date": "2017-10-02",
-      "values": {
-        "putCall": 0.93
-      }
-    },
-    {
-      "date": "2017-10-03",
-      "values": {
-        "putCall": 0.72
-      }
-    },
-    {
-      "date": "2017-10-04",
-      "values": {
-        "putCall": 0.83
-      }
-    },
-    {
-      "date": "2017-10-05",
-      "values": {
-        "putCall": 0.84
-      }
-    },
-    {
-      "date": "2017-10-06",
-      "values": {
-        "putCall": 0.87
-      }
-    },
-    {
-      "date": "2017-10-09",
-      "values": {
-        "putCall": 0.98
-      }
-    },
-    {
-      "date": "2017-10-10",
-      "values": {
-        "putCall": 0.73
-      }
-    },
-    {
-      "date": "2017-10-11",
-      "values": {
-        "putCall": 0.9
-      }
-    },
-    {
-      "date": "2017-10-12",
-      "values": {
-        "putCall": 1.05
-      }
-    },
-    {
-      "date": "2017-10-13",
-      "values": {
-        "putCall": 0.85
-      }
-    },
-    {
-      "date": "2017-10-16",
-      "values": {
-        "putCall": 1.17
-      }
-    },
-    {
-      "date": "2017-10-17",
-      "values": {
-        "putCall": 0.82
-      }
-    },
-    {
-      "date": "2017-10-18",
-      "values": {
-        "putCall": 0.95
-      }
-    },
-    {
-      "date": "2017-10-19",
-      "values": {
-        "putCall": 0.97
-      }
-    },
-    {
-      "date": "2017-10-20",
-      "values": {
-        "putCall": 0.81
-      }
-    },
-    {
-      "date": "2017-10-23",
-      "values": {
-        "putCall": 0.98
-      }
-    },
-    {
-      "date": "2017-10-24",
-      "values": {
-        "putCall": 0.78
-      }
-    },
-    {
-      "date": "2017-10-25",
-      "values": {
-        "putCall": 1.16
-      }
-    },
-    {
-      "date": "2017-10-26",
-      "values": {
-        "putCall": 0.87
-      }
-    },
-    {
-      "date": "2017-10-27",
-      "values": {
-        "putCall": 0.88
-      }
-    },
-    {
-      "date": "2017-10-30",
-      "values": {
-        "putCall": 0.94
-      }
-    },
-    {
-      "date": "2017-10-31",
-      "values": {
-        "putCall": 0.87
-      }
-    },
-    {
-      "date": "2017-11-01",
-      "values": {
-        "putCall": 0.95
-      }
-    },
-    {
-      "date": "2017-11-02",
-      "values": {
-        "putCall": 0.87
-      }
-    },
-    {
-      "date": "2017-11-03",
-      "values": {
-        "putCall": 0.94
-      }
-    },
-    {
-      "date": "2017-11-06",
-      "values": {
-        "putCall": 0.92
-      }
-    },
-    {
-      "date": "2017-11-07",
-      "values": {
-        "putCall": 1.02
-      }
-    },
-    {
-      "date": "2017-11-08",
-      "values": {
-        "putCall": 0.97
-      }
-    },
-    {
-      "date": "2017-11-09",
-      "values": {
-        "putCall": 1.1
-      }
-    },
-    {
-      "date": "2017-11-10",
-      "values": {
-        "putCall": 1.18
-      }
-    },
-    {
-      "date": "2017-11-13",
-      "values": {
-        "putCall": 0.9
-      }
-    },
-    {
-      "date": "2017-11-14",
-      "values": {
-        "putCall": 0.9
-      }
-    },
-    {
-      "date": "2017-11-15",
-      "values": {
-        "putCall": 1.04
-      }
-    },
-    {
-      "date": "2017-11-16",
-      "values": {
-        "putCall": 0.95
-      }
-    },
-    {
-      "date": "2017-11-17",
-      "values": {
-        "putCall": 0.8
-      }
-    },
-    {
-      "date": "2017-11-20",
-      "values": {
-        "putCall": 0.92
-      }
-    },
-    {
-      "date": "2017-11-21",
-      "values": {
-        "putCall": 0.85
-      }
-    },
-    {
-      "date": "2017-11-22",
-      "values": {
-        "putCall": 0.93
-      }
-    },
-    {
-      "date": "2017-11-24",
-      "values": {
-        "putCall": 0.87
-      }
-    },
-    {
-      "date": "2017-11-27",
-      "values": {
-        "putCall": 0.72
-      }
-    },
-    {
-      "date": "2017-11-28",
-      "values": {
-        "putCall": 0.68
-      }
-    },
-    {
-      "date": "2017-11-29",
-      "values": {
-        "putCall": 0.71
-      }
-    },
-    {
-      "date": "2017-11-30",
-      "values": {
-        "putCall": 0.85
-      }
-    },
-    {
-      "date": "2017-12-01",
-      "values": {
-        "putCall": 0.78
-      }
-    },
-    {
-      "date": "2017-12-04",
-      "values": {
-        "putCall": 0.84
-      }
-    },
-    {
-      "date": "2017-12-05",
-      "values": {
-        "putCall": 0.83
-      }
-    },
-    {
-      "date": "2017-12-06",
-      "values": {
-        "putCall": 0.81
-      }
-    },
-    {
-      "date": "2017-12-07",
-      "values": {
-        "putCall": 0.84
-      }
-    },
-    {
-      "date": "2017-12-08",
-      "values": {
-        "putCall": 0.94
-      }
-    },
-    {
-      "date": "2017-12-11",
-      "values": {
-        "putCall": 0.82
-      }
-    },
-    {
-      "date": "2017-12-12",
-      "values": {
-        "putCall": 0.85
-      }
-    },
-    {
-      "date": "2017-12-13",
-      "values": {
-        "putCall": 0.75
-      }
-    },
-    {
-      "date": "2017-12-14",
-      "values": {
-        "putCall": 0.8
-      }
-    },
-    {
-      "date": "2017-12-15",
-      "values": {
-        "putCall": 0.97
-      }
-    },
-    {
-      "date": "2017-12-18",
-      "values": {
-        "putCall": 0.69
-      }
-    },
-    {
-      "date": "2017-12-19",
-      "values": {
-        "putCall": 0.87
-      }
-    },
-    {
-      "date": "2017-12-20",
-      "values": {
-        "putCall": 0.8
-      }
-    },
-    {
-      "date": "2017-12-21",
-      "values": {
-        "putCall": 0.84
-      }
-    },
-    {
-      "date": "2017-12-22",
-      "values": {
-        "putCall": 0.95
-      }
-    },
-    {
-      "date": "2017-12-26",
-      "values": {
-        "putCall": 0.99
-      }
-    },
-    {
-      "date": "2017-12-27",
-      "values": {
-        "putCall": 0.95
-      }
-    },
-    {
-      "date": "2017-12-28",
-      "values": {
-        "putCall": 1.13
-      }
-    },
-    {
-      "date": "2017-12-29",
-      "values": {
-        "putCall": 1.11
-      }
-    },
-    {
-      "date": "2018-01-02",
-      "values": {
-        "putCall": 0.88
-      }
-    },
-    {
-      "date": "2018-01-03",
-      "values": {
-        "putCall": 0.85
-      }
-    },
-    {
-      "date": "2018-01-04",
-      "values": {
-        "putCall": 0.82
-      }
-    },
-    {
-      "date": "2018-01-05",
-      "values": {
-        "putCall": 0.92
-      }
-    },
-    {
-      "date": "2018-01-08",
-      "values": {
-        "putCall": 0.65
-      }
-    },
-    {
-      "date": "2018-01-09",
-      "values": {
-        "putCall": 0.81
-      }
-    },
-    {
-      "date": "2018-01-10",
-      "values": {
-        "putCall": 0.72
-      }
-    },
-    {
-      "date": "2018-01-11",
-      "values": {
-        "putCall": 0.72
-      }
-    },
-    {
-      "date": "2018-01-12",
-      "values": {
-        "putCall": 0.74
-      }
-    },
-    {
-      "date": "2018-01-16",
-      "values": {
-        "putCall": 0.69
-      }
-    },
-    {
-      "date": "2018-01-17",
-      "values": {
-        "putCall": 0.79
-      }
-    },
-    {
-      "date": "2018-01-18",
-      "values": {
-        "putCall": 0.83
-      }
-    },
-    {
-      "date": "2018-01-19",
-      "values": {
-        "putCall": 0.86
-      }
-    },
-    {
-      "date": "2018-01-22",
-      "values": {
-        "putCall": 0.89
-      }
-    },
-    {
-      "date": "2018-01-23",
-      "values": {
-        "putCall": 0.64
-      }
-    },
-    {
-      "date": "2018-01-24",
-      "values": {
-        "putCall": 0.84
-      }
-    },
-    {
-      "date": "2018-01-25",
-      "values": {
-        "putCall": 0.8
-      }
-    },
-    {
-      "date": "2018-01-26",
-      "values": {
-        "putCall": 0.79
-      }
-    },
-    {
-      "date": "2018-01-29",
-      "values": {
-        "putCall": 0.74
-      }
-    },
-    {
-      "date": "2018-01-30",
-      "values": {
-        "putCall": 0.95
-      }
-    },
-    {
-      "date": "2018-01-31",
-      "values": {
-        "putCall": 0.9
-      }
-    },
-    {
-      "date": "2018-02-01",
-      "values": {
-        "putCall": 0.91
-      }
-    },
-    {
-      "date": "2018-02-02",
-      "values": {
-        "putCall": 0.9
-      }
-    },
-    {
-      "date": "2018-02-05",
-      "values": {
-        "putCall": 0.92
-      }
-    },
-    {
-      "date": "2018-02-06",
-      "values": {
-        "putCall": 0.99
-      }
-    },
-    {
-      "date": "2018-02-07",
-      "values": {
-        "putCall": 0.91
-      }
-    },
-    {
-      "date": "2018-02-08",
-      "values": {
-        "putCall": 1.14
-      }
-    },
-    {
-      "date": "2018-02-09",
-      "values": {
-        "putCall": 1.31
-      }
-    },
-    {
-      "date": "2018-02-12",
-      "values": {
-        "putCall": 0.94
-      }
-    },
-    {
-      "date": "2018-02-13",
-      "values": {
-        "putCall": 0.96
-      }
-    },
-    {
-      "date": "2018-02-14",
-      "values": {
-        "putCall": 1.17
-      }
-    },
-    {
-      "date": "2018-02-15",
-      "values": {
-        "putCall": 0.92
-      }
-    },
-    {
-      "date": "2018-02-16",
-      "values": {
-        "putCall": 0.93
-      }
-    },
-    {
-      "date": "2018-02-20",
-      "values": {
-        "putCall": 0.86
-      }
-    },
-    {
-      "date": "2018-02-21",
-      "values": {
-        "putCall": 1.06
-      }
-    },
-    {
-      "date": "2018-02-22",
-      "values": {
-        "putCall": 1.12
-      }
-    },
-    {
-      "date": "2018-02-23",
-      "values": {
-        "putCall": 1.01
-      }
-    },
-    {
-      "date": "2018-02-26",
-      "values": {
-        "putCall": 0.93
-      }
-    },
-    {
-      "date": "2018-02-27",
-      "values": {
-        "putCall": 1.04
-      }
-    },
-    {
-      "date": "2018-02-28",
-      "values": {
-        "putCall": 1.08
-      }
-    },
-    {
-      "date": "2018-03-01",
-      "values": {
-        "putCall": 1.29
-      }
-    },
-    {
-      "date": "2018-03-02",
-      "values": {
-        "putCall": 1.16
-      }
-    },
-    {
-      "date": "2018-03-05",
-      "values": {
-        "putCall": 1
-      }
-    },
-    {
-      "date": "2018-03-06",
-      "values": {
-        "putCall": 0.93
-      }
-    },
-    {
-      "date": "2018-03-07",
-      "values": {
-        "putCall": 1.05
-      }
-    },
-    {
-      "date": "2018-03-08",
-      "values": {
-        "putCall": 0.9
-      }
-    },
-    {
-      "date": "2018-03-09",
-      "values": {
-        "putCall": 0.81
-      }
-    },
-    {
-      "date": "2018-03-12",
-      "values": {
-        "putCall": 0.87
-      }
-    },
-    {
-      "date": "2018-03-13",
-      "values": {
-        "putCall": 0.87
-      }
-    },
-    {
-      "date": "2018-03-14",
-      "values": {
-        "putCall": 1.05
-      }
-    },
-    {
-      "date": "2018-03-15",
-      "values": {
-        "putCall": 0.89
-      }
-    },
-    {
-      "date": "2018-03-16",
-      "values": {
-        "putCall": 0.96
-      }
-    },
-    {
-      "date": "2018-03-19",
-      "values": {
-        "putCall": 1.02
-      }
-    },
-    {
-      "date": "2018-03-20",
-      "values": {
-        "putCall": 0.84
-      }
-    },
-    {
-      "date": "2018-03-21",
-      "values": {
-        "putCall": 1.16
-      }
-    },
-    {
-      "date": "2018-03-22",
-      "values": {
-        "putCall": 1.22
-      }
-    },
-    {
-      "date": "2018-03-23",
-      "values": {
-        "putCall": 1.54
-      }
-    },
-    {
-      "date": "2018-03-26",
-      "values": {
-        "putCall": 1.18
-      }
-    },
-    {
-      "date": "2018-03-27",
-      "values": {
-        "putCall": 1.07
-      }
-    },
-    {
-      "date": "2018-03-28",
-      "values": {
-        "putCall": 1.34
-      }
-    },
-    {
-      "date": "2018-03-29",
-      "values": {
-        "putCall": 0.95
-      }
-    },
-    {
-      "date": "2018-04-02",
-      "values": {
-        "putCall": 1.28
-      }
-    },
-    {
-      "date": "2018-04-03",
-      "values": {
-        "putCall": 1.04
-      }
-    },
-    {
-      "date": "2018-04-04",
-      "values": {
-        "putCall": 0.98
-      }
-    },
-    {
-      "date": "2018-04-05",
-      "values": {
-        "putCall": 0.85
-      }
-    },
-    {
-      "date": "2018-04-06",
-      "values": {
-        "putCall": 1.03
-      }
-    },
-    {
-      "date": "2018-04-09",
-      "values": {
-        "putCall": 0.98
-      }
-    },
-    {
-      "date": "2018-04-10",
-      "values": {
-        "putCall": 0.85
-      }
-    },
-    {
-      "date": "2018-04-11",
-      "values": {
-        "putCall": 1.02
-      }
-    },
-    {
-      "date": "2018-04-12",
-      "values": {
-        "putCall": 0.99
-      }
-    },
-    {
-      "date": "2018-04-13",
-      "values": {
-        "putCall": 0.98
-      }
-    },
-    {
-      "date": "2018-04-16",
-      "values": {
-        "putCall": 0.94
-      }
-    },
-    {
-      "date": "2018-04-17",
-      "values": {
-        "putCall": 0.96
-      }
-    },
-    {
-      "date": "2018-04-18",
-      "values": {
-        "putCall": 0.96
-      }
-    },
-    {
-      "date": "2018-04-19",
-      "values": {
-        "putCall": 0.97
-      }
-    },
-    {
-      "date": "2018-04-20",
-      "values": {
-        "putCall": 0.98
-      }
-    },
-    {
-      "date": "2018-04-23",
-      "values": {
-        "putCall": 0.93
-      }
-    },
-    {
-      "date": "2018-04-24",
-      "values": {
-        "putCall": 1.04
-      }
-    },
-    {
-      "date": "2018-04-25",
-      "values": {
-        "putCall": 0.96
-      }
-    },
-    {
-      "date": "2018-04-26",
-      "values": {
-        "putCall": 0.82
-      }
-    },
-    {
-      "date": "2018-04-27",
-      "values": {
-        "putCall": 0.88
-      }
-    },
-    {
-      "date": "2018-04-30",
-      "values": {
-        "putCall": 0.92
-      }
-    },
-    {
-      "date": "2018-05-01",
-      "values": {
-        "putCall": 1.11
-      }
-    },
-    {
-      "date": "2018-05-02",
-      "values": {
-        "putCall": 0.93
-      }
-    },
-    {
-      "date": "2018-05-03",
-      "values": {
-        "putCall": 1.02
-      }
-    },
-    {
-      "date": "2018-05-04",
-      "values": {
-        "putCall": 0.96
-      }
-    },
-    {
-      "date": "2018-05-07",
-      "values": {
-        "putCall": 0.93
-      }
-    },
-    {
-      "date": "2018-05-08",
-      "values": {
-        "putCall": 0.83
-      }
-    },
-    {
-      "date": "2018-05-09",
-      "values": {
-        "putCall": 0.84
-      }
-    },
-    {
-      "date": "2018-05-10",
-      "values": {
-        "putCall": 0.81
-      }
-    },
-    {
-      "date": "2018-05-11",
-      "values": {
-        "putCall": 0.98
-      }
-    },
-    {
-      "date": "2018-05-14",
-      "values": {
-        "putCall": 0.88
-      }
-    },
-    {
-      "date": "2018-05-15",
-      "values": {
-        "putCall": 1.11
-      }
-    },
-    {
-      "date": "2018-05-16",
-      "values": {
-        "putCall": 0.89
-      }
-    },
-    {
-      "date": "2018-05-17",
-      "values": {
-        "putCall": 0.83
-      }
-    },
-    {
-      "date": "2018-05-18",
-      "values": {
-        "putCall": 1.03
-      }
-    },
-    {
-      "date": "2018-05-21",
-      "values": {
-        "putCall": 0.82
-      }
-    },
-    {
-      "date": "2018-05-22",
-      "values": {
-        "putCall": 0.83
-      }
-    },
-    {
-      "date": "2018-05-23",
-      "values": {
-        "putCall": 0.99
-      }
-    },
-    {
-      "date": "2018-05-24",
-      "values": {
-        "putCall": 0.87
-      }
-    },
-    {
-      "date": "2018-05-25",
-      "values": {
-        "putCall": 0.92
-      }
-    },
-    {
-      "date": "2018-05-29",
-      "values": {
-        "putCall": 1.09
-      }
-    },
-    {
-      "date": "2018-05-30",
-      "values": {
-        "putCall": 0.98
-      }
-    },
-    {
-      "date": "2018-05-31",
-      "values": {
-        "putCall": 1.13
-      }
-    },
-    {
-      "date": "2018-06-01",
-      "values": {
-        "putCall": 0.86
-      }
-    },
-    {
-      "date": "2018-06-04",
-      "values": {
-        "putCall": 0.81
-      }
-    },
-    {
-      "date": "2018-06-05",
-      "values": {
-        "putCall": 0.77
-      }
-    },
-    {
-      "date": "2018-06-06",
-      "values": {
-        "putCall": 0.83
-      }
-    },
-    {
-      "date": "2018-06-07",
-      "values": {
-        "putCall": 0.92
-      }
-    },
-    {
-      "date": "2018-06-08",
-      "values": {
-        "putCall": 0.95
-      }
-    },
-    {
-      "date": "2018-06-11",
-      "values": {
-        "putCall": 0.74
-      }
-    },
-    {
-      "date": "2018-06-12",
-      "values": {
-        "putCall": 0.72
-      }
-    },
-    {
-      "date": "2018-06-13",
-      "values": {
-        "putCall": 0.74
-      }
-    },
-    {
-      "date": "2018-06-14",
-      "values": {
-        "putCall": 0.93
-      }
-    },
-    {
-      "date": "2018-06-15",
-      "values": {
-        "putCall": 0.93
-      }
-    },
-    {
-      "date": "2018-06-18",
-      "values": {
-        "putCall": 1.03
-      }
-    },
-    {
-      "date": "2018-06-19",
-      "values": {
-        "putCall": 0.84
-      }
-    },
-    {
-      "date": "2018-06-20",
-      "values": {
-        "putCall": 0.89
-      }
-    },
-    {
-      "date": "2018-06-21",
-      "values": {
-        "putCall": 1.03
-      }
-    },
-    {
-      "date": "2018-06-22",
-      "values": {
-        "putCall": 0.86
-      }
-    },
-    {
-      "date": "2018-06-25",
-      "values": {
-        "putCall": 1.1
-      }
-    },
-    {
-      "date": "2018-06-26",
-      "values": {
-        "putCall": 0.91
-      }
-    },
-    {
-      "date": "2018-06-27",
-      "values": {
-        "putCall": 1.08
-      }
-    },
-    {
-      "date": "2018-06-28",
-      "values": {
-        "putCall": 1.32
-      }
-    },
-    {
-      "date": "2018-06-29",
-      "values": {
-        "putCall": 1.24
-      }
-    },
-    {
-      "date": "2018-07-02",
-      "values": {
-        "putCall": 1.06
-      }
-    },
-    {
-      "date": "2018-07-03",
-      "values": {
-        "putCall": 1.07
-      }
-    },
-    {
-      "date": "2018-07-05",
-      "values": {
-        "putCall": 0.91
-      }
-    },
-    {
-      "date": "2018-07-06",
-      "values": {
-        "putCall": 1
-      }
-    },
-    {
-      "date": "2018-07-09",
-      "values": {
-        "putCall": 0.92
-      }
-    },
-    {
-      "date": "2018-07-10",
-      "values": {
-        "putCall": 0.98
-      }
-    },
-    {
-      "date": "2018-07-11",
-      "values": {
-        "putCall": 1.02
-      }
-    },
-    {
-      "date": "2018-07-12",
-      "values": {
-        "putCall": 0.92
-      }
-    },
-    {
-      "date": "2018-07-13",
-      "values": {
-        "putCall": 0.98
-      }
-    },
-    {
-      "date": "2018-07-16",
-      "values": {
-        "putCall": 0.99
-      }
-    },
-    {
-      "date": "2018-07-17",
-      "values": {
-        "putCall": 0.95
-      }
-    },
-    {
-      "date": "2018-07-18",
-      "values": {
-        "putCall": 0.85
-      }
-    },
-    {
-      "date": "2018-07-19",
-      "values": {
-        "putCall": 0.9
-      }
-    },
-    {
-      "date": "2018-07-20",
-      "values": {
-        "putCall": 0.98
-      }
-    },
-    {
-      "date": "2018-07-23",
-      "values": {
-        "putCall": 0.85
-      }
-    },
-    {
-      "date": "2018-07-24",
-      "values": {
-        "putCall": 0.91
-      }
-    },
-    {
-      "date": "2018-07-25",
-      "values": {
-        "putCall": 0.82
-      }
-    },
-    {
-      "date": "2018-07-26",
-      "values": {
-        "putCall": 0.74
-      }
-    },
-    {
-      "date": "2018-07-27",
-      "values": {
-        "putCall": 1.05
-      }
-    },
-    {
-      "date": "2018-07-30",
-      "values": {
-        "putCall": 1.12
-      }
-    },
-    {
-      "date": "2018-07-31",
-      "values": {
-        "putCall": 1
-      }
-    },
-    {
-      "date": "2018-08-01",
-      "values": {
-        "putCall": 1.02
-      }
-    },
-    {
-      "date": "2018-08-02",
-      "values": {
-        "putCall": 0.97
-      }
-    },
-    {
-      "date": "2018-08-03",
-      "values": {
-        "putCall": 0.9
-      }
-    },
-    {
-      "date": "2018-08-06",
-      "values": {
-        "putCall": 0.9
-      }
-    },
-    {
-      "date": "2018-08-07",
-      "values": {
-        "putCall": 0.92
-      }
-    },
-    {
-      "date": "2018-08-08",
-      "values": {
-        "putCall": 0.95
-      }
-    },
-    {
-      "date": "2018-08-09",
-      "values": {
-        "putCall": 0.85
-      }
-    },
-    {
-      "date": "2018-08-10",
-      "values": {
-        "putCall": 1.2
-      }
-    },
-    {
-      "date": "2018-08-13",
-      "values": {
-        "putCall": 1.08
-      }
-    },
-    {
-      "date": "2018-08-14",
-      "values": {
-        "putCall": 0.91
-      }
-    },
-    {
-      "date": "2018-08-15",
-      "values": {
-        "putCall": 1.16
-      }
-    },
-    {
-      "date": "2018-08-16",
-      "values": {
-        "putCall": 0.94
-      }
-    },
-    {
-      "date": "2018-08-17",
-      "values": {
-        "putCall": 1.04
-      }
-    },
-    {
-      "date": "2018-08-20",
-      "values": {
-        "putCall": 0.79
-      }
-    },
-    {
-      "date": "2018-08-21",
-      "values": {
-        "putCall": 0.81
-      }
-    },
-    {
-      "date": "2018-08-22",
-      "values": {
-        "putCall": 0.96
-      }
-    },
-    {
-      "date": "2018-08-23",
-      "values": {
-        "putCall": 1.03
-      }
-    },
-    {
-      "date": "2018-08-24",
-      "values": {
-        "putCall": 0.92
-      }
-    },
-    {
-      "date": "2018-08-27",
-      "values": {
-        "putCall": 0.74
-      }
-    },
-    {
-      "date": "2018-08-28",
-      "values": {
-        "putCall": 0.81
-      }
-    },
-    {
-      "date": "2018-08-29",
-      "values": {
-        "putCall": 0.85
-      }
-    },
-    {
-      "date": "2018-08-30",
-      "values": {
-        "putCall": 0.82
-      }
-    },
-    {
-      "date": "2018-08-31",
-      "values": {
-        "putCall": 1.03
-      }
-    },
-    {
-      "date": "2018-09-04",
-      "values": {
-        "putCall": 0.85
-      }
-    },
-    {
-      "date": "2018-09-05",
-      "values": {
-        "putCall": 0.99
-      }
-    },
-    {
-      "date": "2018-09-06",
-      "values": {
-        "putCall": 1.05
-      }
-    },
-    {
-      "date": "2018-09-07",
-      "values": {
-        "putCall": 1.17
-      }
-    },
-    {
-      "date": "2018-09-10",
-      "values": {
-        "putCall": 1.15
-      }
-    },
-    {
-      "date": "2018-09-11",
-      "values": {
-        "putCall": 0.88
-      }
-    },
-    {
-      "date": "2018-09-12",
-      "values": {
-        "putCall": 0.82
-      }
-    },
-    {
-      "date": "2018-09-13",
-      "values": {
-        "putCall": 0.84
-      }
-    },
-    {
-      "date": "2018-09-14",
-      "values": {
-        "putCall": 0.83
-      }
-    },
-    {
-      "date": "2018-09-17",
-      "values": {
-        "putCall": 0.92
-      }
-    },
-    {
-      "date": "2018-09-18",
-      "values": {
-        "putCall": 0.83
-      }
-    },
-    {
-      "date": "2018-09-19",
-      "values": {
-        "putCall": 0.95
-      }
-    },
-    {
-      "date": "2018-09-20",
-      "values": {
-        "putCall": 0.89
-      }
-    },
-    {
-      "date": "2018-09-21",
-      "values": {
-        "putCall": 0.98
-      }
-    },
-    {
-      "date": "2018-09-24",
-      "values": {
-        "putCall": 0.98
-      }
-    },
-    {
-      "date": "2018-09-25",
-      "values": {
-        "putCall": 0.88
-      }
-    },
-    {
-      "date": "2018-09-26",
-      "values": {
-        "putCall": 0.87
-      }
-    },
-    {
-      "date": "2018-09-27",
-      "values": {
-        "putCall": 0.94
-      }
-    },
-    {
-      "date": "2018-09-28",
-      "values": {
-        "putCall": 1.06
-      }
-    },
-    {
-      "date": "2018-10-01",
-      "values": {
-        "putCall": 1.01
-      }
-    },
-    {
-      "date": "2018-10-02",
-      "values": {
-        "putCall": 0.8
-      }
-    },
-    {
-      "date": "2018-10-03",
-      "values": {
-        "putCall": 0.86
-      }
-    },
-    {
-      "date": "2018-10-04",
-      "values": {
-        "putCall": 1.07
-      }
-    },
-    {
-      "date": "2018-10-05",
-      "values": {
-        "putCall": 1.18
-      }
-    },
-    {
-      "date": "2018-10-08",
-      "values": {
-        "putCall": 1.17
-      }
-    },
-    {
-      "date": "2018-10-09",
-      "values": {
-        "putCall": 0.94
-      }
-    },
-    {
-      "date": "2018-10-10",
-      "values": {
-        "putCall": 1.22
-      }
-    },
-    {
-      "date": "2018-10-11",
-      "values": {
-        "putCall": 1.18
-      }
-    },
-    {
-      "date": "2018-10-12",
-      "values": {
-        "putCall": 1.16
-      }
-    },
-    {
-      "date": "2018-10-15",
-      "values": {
-        "putCall": 0.96
-      }
-    },
-    {
-      "date": "2018-10-16",
-      "values": {
-        "putCall": 1.03
-      }
-    },
-    {
-      "date": "2018-10-17",
-      "values": {
-        "putCall": 1.17
-      }
-    },
-    {
-      "date": "2018-10-18",
-      "values": {
-        "putCall": 1.3
-      }
-    },
-    {
-      "date": "2018-10-19",
-      "values": {
-        "putCall": 1.14
-      }
-    },
-    {
-      "date": "2018-10-22",
-      "values": {
-        "putCall": 1.07
-      }
-    },
-    {
-      "date": "2018-10-23",
-      "values": {
-        "putCall": 1.04
-      }
-    },
-    {
-      "date": "2018-10-24",
-      "values": {
-        "putCall": 1.29
-      }
-    },
-    {
-      "date": "2018-10-25",
-      "values": {
-        "putCall": 1.03
-      }
-    },
-    {
-      "date": "2018-10-26",
-      "values": {
-        "putCall": 1.32
-      }
-    },
-    {
-      "date": "2018-10-29",
-      "values": {
-        "putCall": 1.27
-      }
-    },
-    {
-      "date": "2018-10-30",
-      "values": {
-        "putCall": 1.18
-      }
-    },
-    {
-      "date": "2018-10-31",
-      "values": {
-        "putCall": 1.12
-      }
-    },
-    {
-      "date": "2018-11-01",
-      "values": {
-        "putCall": 0.85
-      }
-    },
-    {
-      "date": "2018-11-02",
-      "values": {
-        "putCall": 0.93
-      }
-    },
-    {
-      "date": "2018-11-05",
-      "values": {
-        "putCall": 1.02
-      }
-    },
-    {
-      "date": "2018-11-06",
-      "values": {
-        "putCall": 1.12
-      }
-    },
-    {
-      "date": "2018-11-07",
-      "values": {
-        "putCall": 0.96
-      }
-    },
-    {
-      "date": "2018-11-08",
-      "values": {
-        "putCall": 0.97
-      }
-    },
-    {
-      "date": "2018-11-09",
-      "values": {
-        "putCall": 1.11
-      }
-    },
-    {
-      "date": "2018-11-12",
-      "values": {
-        "putCall": 1.19
-      }
-    },
-    {
-      "date": "2018-11-13",
-      "values": {
-        "putCall": 0.98
-      }
-    },
-    {
-      "date": "2018-11-14",
-      "values": {
-        "putCall": 1.22
-      }
-    },
-    {
-      "date": "2018-11-15",
-      "values": {
-        "putCall": 0.85
-      }
-    },
-    {
-      "date": "2018-11-16",
-      "values": {
-        "putCall": 0.94
-      }
-    },
-    {
-      "date": "2018-11-19",
-      "values": {
-        "putCall": 0.97
-      }
-    },
-    {
-      "date": "2018-11-20",
-      "values": {
-        "putCall": 0.92
-      }
-    },
-    {
-      "date": "2018-11-21",
-      "values": {
-        "putCall": 1.08
-      }
-    },
-    {
-      "date": "2018-11-23",
-      "values": {
-        "putCall": 1.12
-      }
-    },
-    {
-      "date": "2018-11-26",
-      "values": {
-        "putCall": 0.96
-      }
-    },
-    {
-      "date": "2018-11-27",
-      "values": {
-        "putCall": 0.92
-      }
-    },
-    {
-      "date": "2018-11-28",
-      "values": {
-        "putCall": 0.84
-      }
-    },
-    {
-      "date": "2018-11-29",
-      "values": {
-        "putCall": 0.89
-      }
-    },
-    {
-      "date": "2018-11-30",
-      "values": {
-        "putCall": 0.76
-      }
-    },
-    {
-      "date": "2018-12-03",
-      "values": {
-        "putCall": 0.76
-      }
-    },
-    {
-      "date": "2018-12-04",
-      "values": {
-        "putCall": 0.95
-      }
-    },
-    {
-      "date": "2018-12-06",
-      "values": {
-        "putCall": 1.08
-      }
-    },
-    {
-      "date": "2018-12-07",
-      "values": {
-        "putCall": 1.17
-      }
-    },
-    {
-      "date": "2018-12-10",
-      "values": {
-        "putCall": 1.07
-      }
-    },
-    {
-      "date": "2018-12-11",
-      "values": {
-        "putCall": 0.97
-      }
-    },
-    {
-      "date": "2018-12-12",
-      "values": {
-        "putCall": 1
-      }
-    },
-    {
-      "date": "2018-12-13",
-      "values": {
-        "putCall": 1.16
-      }
-    },
-    {
-      "date": "2018-12-14",
-      "values": {
-        "putCall": 1.14
-      }
-    },
-    {
-      "date": "2018-12-17",
-      "values": {
-        "putCall": 1.37
-      }
-    },
-    {
-      "date": "2018-12-18",
-      "values": {
-        "putCall": 1.09
-      }
-    },
-    {
-      "date": "2018-12-19",
-      "values": {
-        "putCall": 1.28
-      }
-    },
-    {
-      "date": "2018-12-20",
-      "values": {
-        "putCall": 1.82
-      }
-    },
-    {
-      "date": "2018-12-21",
-      "values": {
-        "putCall": 1.43
-      }
-    },
-    {
-      "date": "2018-12-24",
-      "values": {
-        "putCall": 1.32
-      }
-    },
-    {
-      "date": "2018-12-26",
-      "values": {
-        "putCall": 1.06
-      }
-    },
-    {
-      "date": "2018-12-27",
-      "values": {
-        "putCall": 0.96
-      }
-    },
-    {
-      "date": "2018-12-28",
-      "values": {
-        "putCall": 0.78
-      }
-    },
-    {
-      "date": "2018-12-31",
-      "values": {
-        "putCall": 0.98
-      }
-    },
-    {
-      "date": "2019-01-02",
-      "values": {
-        "putCall": 1.03
-      }
-    },
-    {
-      "date": "2019-01-03",
-      "values": {
-        "putCall": 1.31
-      }
-    },
-    {
-      "date": "2019-01-04",
-      "values": {
-        "putCall": 0.91
-      }
-    },
-    {
-      "date": "2019-01-07",
-      "values": {
-        "putCall": 0.87
-      }
-    },
-    {
-      "date": "2019-01-08",
-      "values": {
-        "putCall": 0.97
-      }
-    },
-    {
-      "date": "2019-01-09",
-      "values": {
-        "putCall": 0.93
-      }
-    },
-    {
-      "date": "2019-01-10",
-      "values": {
-        "putCall": 1.13
-      }
-    },
-    {
-      "date": "2019-01-11",
-      "values": {
-        "putCall": 1.08
-      }
-    },
-    {
-      "date": "2019-01-14",
-      "values": {
-        "putCall": 1.04
-      }
-    },
-    {
-      "date": "2019-01-15",
-      "values": {
-        "putCall": 1.03
-      }
-    },
-    {
-      "date": "2019-01-16",
-      "values": {
-        "putCall": 1.08
-      }
-    },
-    {
-      "date": "2019-01-17",
-      "values": {
-        "putCall": 0.8
-      }
-    },
-    {
-      "date": "2019-01-18",
-      "values": {
-        "putCall": 0.84
-      }
-    },
-    {
-      "date": "2019-01-22",
-      "values": {
-        "putCall": 0.93
-      }
-    },
-    {
-      "date": "2019-01-23",
-      "values": {
-        "putCall": 1.16
-      }
-    },
-    {
-      "date": "2019-01-24",
-      "values": {
-        "putCall": 0.98
-      }
-    },
-    {
-      "date": "2019-01-25",
-      "values": {
-        "putCall": 0.75
-      }
-    },
-    {
-      "date": "2019-01-28",
-      "values": {
-        "putCall": 0.99
-      }
-    },
-    {
-      "date": "2019-01-29",
-      "values": {
-        "putCall": 0.89
-      }
-    },
-    {
-      "date": "2019-01-30",
-      "values": {
-        "putCall": 0.89
-      }
-    },
-    {
-      "date": "2019-01-31",
-      "values": {
-        "putCall": 0.84
-      }
-    },
-    {
-      "date": "2019-02-01",
-      "values": {
-        "putCall": 1.13
-      }
-    },
-    {
-      "date": "2019-02-04",
-      "values": {
-        "putCall": 0.84
-      }
-    },
-    {
-      "date": "2019-02-05",
-      "values": {
-        "putCall": 0.83
-      }
-    },
-    {
-      "date": "2019-02-06",
-      "values": {
-        "putCall": 0.97
-      }
-    },
-    {
-      "date": "2019-02-07",
-      "values": {
-        "putCall": 0.99
-      }
-    },
-    {
-      "date": "2019-02-08",
-      "values": {
-        "putCall": 1.04
-      }
-    },
-    {
-      "date": "2019-02-11",
-      "values": {
-        "putCall": 0.87
-      }
-    },
-    {
-      "date": "2019-02-12",
-      "values": {
-        "putCall": 0.78
-      }
-    },
-    {
-      "date": "2019-02-13",
-      "values": {
-        "putCall": 1.01
-      }
-    },
-    {
-      "date": "2019-02-14",
-      "values": {
-        "putCall": 0.92
-      }
-    },
-    {
-      "date": "2019-02-15",
-      "values": {
-        "putCall": 0.8
-      }
-    },
-    {
-      "date": "2019-02-19",
-      "values": {
-        "putCall": 0.86
-      }
-    },
-    {
-      "date": "2019-02-20",
-      "values": {
-        "putCall": 0.79
-      }
-    },
-    {
-      "date": "2019-02-21",
-      "values": {
-        "putCall": 0.93
-      }
-    },
-    {
-      "date": "2019-02-22",
-      "values": {
-        "putCall": 0.79
-      }
-    },
-    {
-      "date": "2019-02-25",
-      "values": {
-        "putCall": 0.78
-      }
-    },
-    {
-      "date": "2019-02-26",
-      "values": {
-        "putCall": 0.85
-      }
-    },
-    {
-      "date": "2019-02-27",
-      "values": {
-        "putCall": 0.93
-      }
-    },
-    {
-      "date": "2019-02-28",
-      "values": {
-        "putCall": 0.96
-      }
-    },
-    {
-      "date": "2019-03-01",
-      "values": {
-        "putCall": 0.91
-      }
-    },
-    {
-      "date": "2019-03-04",
-      "values": {
-        "putCall": 1
-      }
-    },
-    {
-      "date": "2019-03-05",
-      "values": {
-        "putCall": 0.89
-      }
-    },
-    {
-      "date": "2019-03-06",
-      "values": {
-        "putCall": 1.06
-      }
-    },
-    {
-      "date": "2019-03-07",
-      "values": {
-        "putCall": 1.12
-      }
-    },
-    {
-      "date": "2019-03-08",
-      "values": {
-        "putCall": 0.97
-      }
-    },
-    {
-      "date": "2019-03-11",
-      "values": {
-        "putCall": 0.82
-      }
-    },
-    {
-      "date": "2019-03-12",
-      "values": {
-        "putCall": 1.01
-      }
-    },
-    {
-      "date": "2019-03-13",
-      "values": {
-        "putCall": 0.85
-      }
-    },
-    {
-      "date": "2019-03-14",
-      "values": {
-        "putCall": 0.91
-      }
-    },
-    {
-      "date": "2019-03-15",
-      "values": {
-        "putCall": 0.85
-      }
-    },
-    {
-      "date": "2019-03-18",
-      "values": {
-        "putCall": 0.81
-      }
-    },
-    {
-      "date": "2019-03-19",
-      "values": {
-        "putCall": 0.96
-      }
-    },
-    {
-      "date": "2019-03-20",
-      "values": {
-        "putCall": 0.89
-      }
-    },
-    {
-      "date": "2019-03-21",
-      "values": {
-        "putCall": 0.77
-      }
-    },
-    {
-      "date": "2019-03-22",
-      "values": {
-        "putCall": 0.89
-      }
-    },
-    {
-      "date": "2019-03-25",
-      "values": {
-        "putCall": 0.86
-      }
-    },
-    {
-      "date": "2019-03-26",
-      "values": {
-        "putCall": 0.88
-      }
-    },
-    {
-      "date": "2019-03-27",
-      "values": {
-        "putCall": 1.03
-      }
-    },
-    {
-      "date": "2019-03-28",
-      "values": {
-        "putCall": 0.87
-      }
-    },
-    {
-      "date": "2019-03-29",
-      "values": {
-        "putCall": 0.88
-      }
-    },
-    {
-      "date": "2019-04-01",
-      "values": {
-        "putCall": 0.84
-      }
-    },
-    {
-      "date": "2019-04-02",
-      "values": {
-        "putCall": 0.83
-      }
-    },
-    {
-      "date": "2019-04-03",
-      "values": {
-        "putCall": 0.86
-      }
-    },
-    {
-      "date": "2019-04-04",
-      "values": {
-        "putCall": 0.81
-      }
-    },
-    {
-      "date": "2019-04-05",
-      "values": {
-        "putCall": 0.82
-      }
-    },
-    {
-      "date": "2019-04-08",
-      "values": {
-        "putCall": 0.76
-      }
-    },
-    {
-      "date": "2019-04-09",
-      "values": {
-        "putCall": 0.86
-      }
-    },
-    {
-      "date": "2019-04-10",
-      "values": {
-        "putCall": 0.89
-      }
-    },
-    {
-      "date": "2019-04-11",
-      "values": {
-        "putCall": 0.99
-      }
-    },
-    {
-      "date": "2019-04-12",
-      "values": {
-        "putCall": 0.74
-      }
-    },
-    {
-      "date": "2019-04-15",
-      "values": {
-        "putCall": 0.91
-      }
-    },
-    {
-      "date": "2019-04-16",
-      "values": {
-        "putCall": 0.92
-      }
-    },
-    {
-      "date": "2019-04-17",
-      "values": {
-        "putCall": 0.81
-      }
-    },
-    {
-      "date": "2019-04-18",
-      "values": {
-        "putCall": 0.88
-      }
-    },
-    {
-      "date": "2019-04-22",
-      "values": {
-        "putCall": 0.86
-      }
-    },
-    {
-      "date": "2019-04-23",
-      "values": {
-        "putCall": 0.81
-      }
-    },
-    {
-      "date": "2019-04-24",
-      "values": {
-        "putCall": 0.87
-      }
-    },
-    {
-      "date": "2019-04-25",
-      "values": {
-        "putCall": 0.85
-      }
-    },
-    {
-      "date": "2019-04-26",
-      "values": {
-        "putCall": 0.86
-      }
-    },
-    {
-      "date": "2019-04-29",
-      "values": {
-        "putCall": 0.86
-      }
-    },
-    {
-      "date": "2019-04-30",
-      "values": {
-        "putCall": 1.04
-      }
-    },
-    {
-      "date": "2019-05-01",
-      "values": {
-        "putCall": 0.93
-      }
-    },
-    {
-      "date": "2019-05-02",
-      "values": {
-        "putCall": 0.93
-      }
-    },
-    {
-      "date": "2019-05-03",
-      "values": {
-        "putCall": 0.77
-      }
-    },
-    {
-      "date": "2019-05-06",
-      "values": {
-        "putCall": 1.05
-      }
-    },
-    {
-      "date": "2019-05-07",
-      "values": {
-        "putCall": 0.87
-      }
-    },
-    {
-      "date": "2019-05-08",
-      "values": {
-        "putCall": 1.2
-      }
-    },
-    {
-      "date": "2019-05-09",
-      "values": {
-        "putCall": 1.28
-      }
-    },
-    {
-      "date": "2019-05-10",
-      "values": {
-        "putCall": 1.24
-      }
-    },
-    {
-      "date": "2019-05-13",
-      "values": {
-        "putCall": 1.09
-      }
-    },
-    {
-      "date": "2019-05-14",
-      "values": {
-        "putCall": 1.02
-      }
-    },
-    {
-      "date": "2019-05-15",
-      "values": {
-        "putCall": 1.15
-      }
-    },
-    {
-      "date": "2019-05-16",
-      "values": {
-        "putCall": 1.02
-      }
-    },
-    {
-      "date": "2019-05-17",
-      "values": {
-        "putCall": 1.09
-      }
-    },
-    {
-      "date": "2019-05-20",
-      "values": {
-        "putCall": 0.85
-      }
-    },
-    {
-      "date": "2019-05-21",
-      "values": {
-        "putCall": 1
-      }
-    },
-    {
-      "date": "2019-05-22",
-      "values": {
-        "putCall": 0.94
-      }
-    },
-    {
-      "date": "2019-05-23",
-      "values": {
-        "putCall": 1.21
-      }
-    },
-    {
-      "date": "2019-05-24",
-      "values": {
-        "putCall": 0.96
-      }
-    },
-    {
-      "date": "2019-05-28",
-      "values": {
-        "putCall": 1.07
-      }
-    },
-    {
-      "date": "2019-05-29",
-      "values": {
-        "putCall": 1.41
-      }
-    },
-    {
-      "date": "2019-05-30",
-      "values": {
-        "putCall": 1.1
-      }
-    },
-    {
-      "date": "2019-05-31",
-      "values": {
-        "putCall": 1.19
-      }
-    },
-    {
-      "date": "2019-06-03",
-      "values": {
-        "putCall": 1.13
-      }
-    },
-    {
-      "date": "2019-06-04",
-      "values": {
-        "putCall": 0.96
-      }
-    },
-    {
-      "date": "2019-06-05",
-      "values": {
-        "putCall": 0.99
-      }
-    },
-    {
-      "date": "2019-06-06",
-      "values": {
-        "putCall": 0.85
-      }
-    },
-    {
-      "date": "2019-06-07",
-      "values": {
-        "putCall": 0.79
-      }
-    },
-    {
-      "date": "2019-06-10",
-      "values": {
-        "putCall": 0.78
-      }
-    },
-    {
-      "date": "2019-06-11",
-      "values": {
-        "putCall": 0.98
-      }
-    },
-    {
-      "date": "2019-06-12",
-      "values": {
-        "putCall": 1
-      }
-    },
-    {
-      "date": "2019-06-13",
-      "values": {
-        "putCall": 0.9
-      }
-    },
-    {
-      "date": "2019-06-14",
-      "values": {
-        "putCall": 0.97
-      }
-    },
-    {
-      "date": "2019-06-17",
-      "values": {
-        "putCall": 1
-      }
-    },
-    {
-      "date": "2019-06-18",
-      "values": {
-        "putCall": 0.91
-      }
-    },
-    {
-      "date": "2019-06-19",
-      "values": {
-        "putCall": 0.85
-      }
-    },
-    {
-      "date": "2019-06-20",
-      "values": {
-        "putCall": 0.76
-      }
-    },
-    {
-      "date": "2019-06-21",
-      "values": {
-        "putCall": 0.76
-      }
-    },
-    {
-      "date": "2019-06-24",
-      "values": {
-        "putCall": 0.77
-      }
-    },
-    {
-      "date": "2019-06-25",
-      "values": {
-        "putCall": 0.98
-      }
-    },
-    {
-      "date": "2019-06-26",
-      "values": {
-        "putCall": 0.91
-      }
-    },
-    {
-      "date": "2019-06-27",
-      "values": {
-        "putCall": 0.89
-      }
-    },
-    {
-      "date": "2019-06-28",
-      "values": {
-        "putCall": 0.86
-      }
-    },
-    {
-      "date": "2019-07-01",
-      "values": {
-        "putCall": 0.88
-      }
-    },
-    {
-      "date": "2019-07-02",
-      "values": {
-        "putCall": 0.89
-      }
-    },
-    {
-      "date": "2019-07-03",
-      "values": {
-        "putCall": 0.77
-      }
-    },
-    {
-      "date": "2019-07-05",
-      "values": {
-        "putCall": 0.9
-      }
-    },
-    {
-      "date": "2019-07-08",
-      "values": {
-        "putCall": 0.94
-      }
-    },
-    {
-      "date": "2019-07-09",
-      "values": {
-        "putCall": 0.94
-      }
-    },
-    {
-      "date": "2019-07-10",
-      "values": {
-        "putCall": 0.87
-      }
-    },
-    {
-      "date": "2019-07-11",
-      "values": {
-        "putCall": 0.88
-      }
-    },
-    {
-      "date": "2019-07-12",
-      "values": {
-        "putCall": 0.9
-      }
-    },
-    {
-      "date": "2019-07-15",
-      "values": {
-        "putCall": 0.96
-      }
-    },
-    {
-      "date": "2019-07-16",
-      "values": {
-        "putCall": 0.9
-      }
-    },
-    {
-      "date": "2019-07-17",
-      "values": {
-        "putCall": 0.99
-      }
-    },
-    {
-      "date": "2019-07-18",
-      "values": {
-        "putCall": 0.94
-      }
-    },
-    {
-      "date": "2019-07-19",
-      "values": {
-        "putCall": 1.09
-      }
-    },
-    {
-      "date": "2019-07-22",
-      "values": {
-        "putCall": 0.99
-      }
-    },
-    {
-      "date": "2019-07-23",
-      "values": {
-        "putCall": 0.75
-      }
-    },
-    {
-      "date": "2019-07-24",
-      "values": {
-        "putCall": 0.73
-      }
-    },
-    {
-      "date": "2019-07-25",
-      "values": {
-        "putCall": 0.77
-      }
-    },
-    {
-      "date": "2019-07-26",
-      "values": {
-        "putCall": 0.81
-      }
-    },
-    {
-      "date": "2019-07-29",
-      "values": {
-        "putCall": 0.81
-      }
-    },
-    {
-      "date": "2019-07-30",
-      "values": {
-        "putCall": 1.03
-      }
-    },
-    {
-      "date": "2019-07-31",
-      "values": {
-        "putCall": 0.99
-      }
-    },
-    {
-      "date": "2019-08-01",
-      "values": {
-        "putCall": 1.06
-      }
-    },
-    {
-      "date": "2019-08-02",
-      "values": {
-        "putCall": 1.13
-      }
-    },
-    {
-      "date": "2019-08-05",
-      "values": {
-        "putCall": 1.24
-      }
-    },
-    {
-      "date": "2019-08-06",
-      "values": {
-        "putCall": 1.1
-      }
-    },
-    {
-      "date": "2019-08-07",
-      "values": {
-        "putCall": 1.26
-      }
-    },
-    {
-      "date": "2019-08-08",
-      "values": {
-        "putCall": 1.05
-      }
-    },
-    {
-      "date": "2019-08-09",
-      "values": {
-        "putCall": 0.99
-      }
-    },
-    {
-      "date": "2019-08-12",
-      "values": {
-        "putCall": 1.16
-      }
-    },
-    {
-      "date": "2019-08-13",
-      "values": {
-        "putCall": 0.93
-      }
-    },
-    {
-      "date": "2019-08-14",
-      "values": {
-        "putCall": 1.27
-      }
-    },
-    {
-      "date": "2019-08-15",
-      "values": {
-        "putCall": 1.17
-      }
-    },
-    {
-      "date": "2019-08-16",
-      "values": {
-        "putCall": 1.1
-      }
-    },
-    {
-      "date": "2019-08-19",
-      "values": {
-        "putCall": 0.94
-      }
-    },
-    {
-      "date": "2019-08-20",
-      "values": {
-        "putCall": 0.84
-      }
-    },
-    {
-      "date": "2019-08-21",
-      "values": {
-        "putCall": 1.28
-      }
-    },
-    {
-      "date": "2019-08-22",
-      "values": {
-        "putCall": 0.93
-      }
-    },
-    {
-      "date": "2019-08-23",
-      "values": {
-        "putCall": 1.19
-      }
-    },
-    {
-      "date": "2019-08-26",
-      "values": {
-        "putCall": 1.09
-      }
-    },
-    {
-      "date": "2019-08-27",
-      "values": {
-        "putCall": 0.95
-      }
-    },
-    {
-      "date": "2019-08-28",
-      "values": {
-        "putCall": 1.18
-      }
-    },
-    {
-      "date": "2019-08-29",
-      "values": {
-        "putCall": 1.01
-      }
-    },
-    {
-      "date": "2019-08-30",
-      "values": {
-        "putCall": 1.25
-      }
-    },
-    {
-      "date": "2019-09-03",
-      "values": {
-        "putCall": 1.11
-      }
-    },
-    {
-      "date": "2019-09-04",
-      "values": {
-        "putCall": 1
-      }
-    },
-    {
-      "date": "2019-09-05",
-      "values": {
-        "putCall": 0.82
-      }
-    },
-    {
-      "date": "2019-09-06",
-      "values": {
-        "putCall": 0.92
-      }
-    },
-    {
-      "date": "2019-09-09",
-      "values": {
-        "putCall": 0.98
-      }
-    },
-    {
-      "date": "2019-09-10",
-      "values": {
-        "putCall": 0.84
-      }
-    },
-    {
-      "date": "2019-09-11",
-      "values": {
-        "putCall": 0.78
-      }
-    },
-    {
-      "date": "2019-09-12",
-      "values": {
-        "putCall": 0.84
-      }
-    },
-    {
-      "date": "2019-09-13",
-      "values": {
-        "putCall": 0.92
-      }
-    },
-    {
-      "date": "2019-09-16",
-      "values": {
-        "putCall": 1.19
-      }
-    },
-    {
-      "date": "2019-09-17",
-      "values": {
-        "putCall": 0.83
-      }
-    },
-    {
-      "date": "2019-09-18",
-      "values": {
-        "putCall": 1.03
-      }
-    },
-    {
-      "date": "2019-09-19",
-      "values": {
-        "putCall": 1.12
-      }
-    },
-    {
-      "date": "2019-09-20",
-      "values": {
-        "putCall": 1.05
-      }
-    },
-    {
-      "date": "2019-09-23",
-      "values": {
-        "putCall": 1.03
-      }
-    },
-    {
-      "date": "2019-09-24",
-      "values": {
-        "putCall": 1.15
-      }
-    },
-    {
-      "date": "2019-09-25",
-      "values": {
-        "putCall": 1.05
-      }
-    },
-    {
-      "date": "2019-09-26",
-      "values": {
-        "putCall": 1.04
-      }
-    },
-    {
-      "date": "2019-09-27",
-      "values": {
-        "putCall": 1.06
-      }
-    },
-    {
-      "date": "2019-09-30",
-      "values": {
-        "putCall": 1.17
-      }
-    },
-    {
-      "date": "2019-10-01",
-      "values": {
-        "putCall": 1.09
-      }
-    },
-    {
-      "date": "2019-10-02",
-      "values": {
-        "putCall": 1.27
-      }
-    },
-    {
-      "date": "2019-10-03",
-      "values": {
-        "putCall": 1.37
-      }
-    },
-    {
-      "date": "2019-10-04",
-      "values": {
-        "putCall": 1.05
-      }
-    },
     {
       "date": "2026-01-02",
       "values": {
         "us2y": 3.47,
         "us10y": 4.19,
-        "us30y": 4.86
+        "us30y": 4.86,
+        "putCall": 0.83
       }
     },
     {
@@ -3326,7 +15,8 @@
       "values": {
         "us2y": 3.46,
         "us10y": 4.17,
-        "us30y": 4.85
+        "us30y": 4.85,
+        "putCall": 0.89
       }
     },
     {
@@ -3334,7 +24,8 @@
       "values": {
         "us2y": 3.47,
         "us10y": 4.18,
-        "us30y": 4.86
+        "us30y": 4.86,
+        "putCall": 0.9
       }
     },
     {
@@ -3342,7 +33,8 @@
       "values": {
         "us2y": 3.47,
         "us10y": 4.15,
-        "us30y": 4.82
+        "us30y": 4.82,
+        "putCall": 0.96
       }
     },
     {
@@ -3350,7 +42,8 @@
       "values": {
         "us2y": 3.49,
         "us10y": 4.19,
-        "us30y": 4.85
+        "us30y": 4.85,
+        "putCall": 0.83
       }
     },
     {
@@ -3358,7 +51,8 @@
       "values": {
         "us2y": 3.54,
         "us10y": 4.18,
-        "us30y": 4.82
+        "us30y": 4.82,
+        "putCall": 0.75
       }
     },
     {
@@ -3366,7 +60,8 @@
       "values": {
         "us2y": 3.54,
         "us10y": 4.19,
-        "us30y": 4.83
+        "us30y": 4.83,
+        "putCall": 0.97
       }
     },
     {
@@ -3374,7 +69,8 @@
       "values": {
         "us2y": 3.53,
         "us10y": 4.18,
-        "us30y": 4.83
+        "us30y": 4.83,
+        "putCall": 0.88
       }
     },
     {
@@ -3382,7 +78,8 @@
       "values": {
         "us2y": 3.51,
         "us10y": 4.15,
-        "us30y": 4.79
+        "us30y": 4.79,
+        "putCall": 0.93
       }
     },
     {
@@ -3390,7 +87,8 @@
       "values": {
         "us2y": 3.56,
         "us10y": 4.17,
-        "us30y": 4.79
+        "us30y": 4.79,
+        "putCall": 0.83
       }
     },
     {
@@ -3398,7 +96,8 @@
       "values": {
         "us2y": 3.59,
         "us10y": 4.24,
-        "us30y": 4.83
+        "us30y": 4.83,
+        "putCall": 0.73
       }
     },
     {
@@ -3406,7 +105,8 @@
       "values": {
         "us2y": 3.6,
         "us10y": 4.3,
-        "us30y": 4.91
+        "us30y": 4.91,
+        "putCall": 0.9
       }
     },
     {
@@ -3414,7 +114,8 @@
       "values": {
         "us2y": 3.6,
         "us10y": 4.26,
-        "us30y": 4.87
+        "us30y": 4.87,
+        "putCall": 0.85
       }
     },
     {
@@ -3422,7 +123,8 @@
       "values": {
         "us2y": 3.61,
         "us10y": 4.26,
-        "us30y": 4.84
+        "us30y": 4.84,
+        "putCall": 0.76
       }
     },
     {
@@ -3430,7 +132,8 @@
       "values": {
         "us2y": 3.6,
         "us10y": 4.24,
-        "us30y": 4.82
+        "us30y": 4.82,
+        "putCall": 0.88
       }
     },
     {
@@ -3438,7 +141,8 @@
       "values": {
         "us2y": 3.56,
         "us10y": 4.22,
-        "us30y": 4.8
+        "us30y": 4.8,
+        "putCall": 0.96
       }
     },
     {
@@ -3446,7 +150,8 @@
       "values": {
         "us2y": 3.53,
         "us10y": 4.24,
-        "us30y": 4.83
+        "us30y": 4.83,
+        "putCall": 0.76
       }
     },
     {
@@ -3454,7 +159,8 @@
       "values": {
         "us2y": 3.56,
         "us10y": 4.26,
-        "us30y": 4.85
+        "us30y": 4.85,
+        "putCall": 0.81
       }
     },
     {
@@ -3462,7 +168,8 @@
       "values": {
         "us2y": 3.53,
         "us10y": 4.24,
-        "us30y": 4.85
+        "us30y": 4.85,
+        "putCall": 0.84
       }
     },
     {
@@ -3470,7 +177,8 @@
       "values": {
         "us2y": 3.52,
         "us10y": 4.26,
-        "us30y": 4.87
+        "us30y": 4.87,
+        "putCall": 0.82
       }
     },
     {
@@ -3478,7 +186,8 @@
       "values": {
         "us2y": 3.57,
         "us10y": 4.29,
-        "us30y": 4.9
+        "us30y": 4.9,
+        "putCall": 0.93
       }
     },
     {
@@ -3486,7 +195,8 @@
       "values": {
         "us2y": 3.57,
         "us10y": 4.28,
-        "us30y": 4.9
+        "us30y": 4.9,
+        "putCall": 0.84
       }
     },
     {
@@ -3494,7 +204,8 @@
       "values": {
         "us2y": 3.57,
         "us10y": 4.29,
-        "us30y": 4.91
+        "us30y": 4.91,
+        "putCall": 1
       }
     },
     {
@@ -3502,7 +213,8 @@
       "values": {
         "us2y": 3.47,
         "us10y": 4.21,
-        "us30y": 4.85
+        "us30y": 4.85,
+        "putCall": 0.92
       }
     },
     {
@@ -3510,7 +222,8 @@
       "values": {
         "us2y": 3.5,
         "us10y": 4.22,
-        "us30y": 4.85
+        "us30y": 4.85,
+        "putCall": 0.86
       }
     },
     {
@@ -3518,7 +231,8 @@
       "values": {
         "us2y": 3.48,
         "us10y": 4.22,
-        "us30y": 4.85
+        "us30y": 4.85,
+        "putCall": 0.88
       }
     },
     {
@@ -3526,7 +240,8 @@
       "values": {
         "us2y": 3.45,
         "us10y": 4.16,
-        "us30y": 4.78
+        "us30y": 4.78,
+        "putCall": 0.97
       }
     },
     {
@@ -3534,7 +249,8 @@
       "values": {
         "us2y": 3.52,
         "us10y": 4.18,
-        "us30y": 4.82
+        "us30y": 4.82,
+        "putCall": 1.01
       }
     },
     {
@@ -3542,7 +258,8 @@
       "values": {
         "us2y": 3.47,
         "us10y": 4.09,
-        "us30y": 4.72
+        "us30y": 4.72,
+        "putCall": 0.94
       }
     },
     {
@@ -3550,7 +267,8 @@
       "values": {
         "us2y": 3.4,
         "us10y": 4.04,
-        "us30y": 4.69
+        "us30y": 4.69,
+        "putCall": 0.88
       }
     },
     {
@@ -3558,7 +276,8 @@
       "values": {
         "us2y": 3.43,
         "us10y": 4.05,
-        "us30y": 4.68
+        "us30y": 4.68,
+        "putCall": 0.98
       }
     },
     {
@@ -3566,7 +285,8 @@
       "values": {
         "us2y": 3.47,
         "us10y": 4.09,
-        "us30y": 4.71
+        "us30y": 4.71,
+        "putCall": 1.01
       }
     },
     {
@@ -3574,7 +294,8 @@
       "values": {
         "us2y": 3.47,
         "us10y": 4.08,
-        "us30y": 4.7
+        "us30y": 4.7,
+        "putCall": 0.87
       }
     },
     {
@@ -3582,7 +303,8 @@
       "values": {
         "us2y": 3.48,
         "us10y": 4.08,
-        "us30y": 4.72
+        "us30y": 4.72,
+        "putCall": 0.9
       }
     },
     {
@@ -3590,7 +312,8 @@
       "values": {
         "us2y": 3.43,
         "us10y": 4.03,
-        "us30y": 4.7
+        "us30y": 4.7,
+        "putCall": 0.93
       }
     },
     {
@@ -3598,7 +321,8 @@
       "values": {
         "us2y": 3.43,
         "us10y": 4.04,
-        "us30y": 4.7
+        "us30y": 4.7,
+        "putCall": 0.87
       }
     },
     {
@@ -3606,7 +330,8 @@
       "values": {
         "us2y": 3.45,
         "us10y": 4.05,
-        "us30y": 4.7
+        "us30y": 4.7,
+        "putCall": 0.85
       }
     },
     {
@@ -3614,7 +339,8 @@
       "values": {
         "us2y": 3.42,
         "us10y": 4.02,
-        "us30y": 4.67
+        "us30y": 4.67,
+        "putCall": 0.85
       }
     },
     {
@@ -3622,7 +348,8 @@
       "values": {
         "us2y": 3.38,
         "us10y": 3.97,
-        "us30y": 4.64
+        "us30y": 4.64,
+        "putCall": 0.84
       }
     },
     {
@@ -3630,7 +357,8 @@
       "values": {
         "us2y": 3.47,
         "us10y": 4.05,
-        "us30y": 4.7
+        "us30y": 4.7,
+        "putCall": 0.94
       }
     },
     {
@@ -3638,7 +366,8 @@
       "values": {
         "us2y": 3.51,
         "us10y": 4.06,
-        "us30y": 4.7
+        "us30y": 4.7,
+        "putCall": 0.96
       }
     },
     {
@@ -3646,7 +375,8 @@
       "values": {
         "us2y": 3.54,
         "us10y": 4.09,
-        "us30y": 4.72
+        "us30y": 4.72,
+        "putCall": 0.94
       }
     },
     {
@@ -3654,7 +384,8 @@
       "values": {
         "us2y": 3.57,
         "us10y": 4.13,
-        "us30y": 4.74
+        "us30y": 4.74,
+        "putCall": 0.9
       }
     },
     {
@@ -3662,7 +393,8 @@
       "values": {
         "us2y": 3.56,
         "us10y": 4.15,
-        "us30y": 4.77
+        "us30y": 4.77,
+        "putCall": 0.96
       }
     },
     {
@@ -3670,7 +402,8 @@
       "values": {
         "us2y": 3.56,
         "us10y": 4.12,
-        "us30y": 4.72
+        "us30y": 4.72,
+        "putCall": 1
       }
     },
     {
@@ -3678,7 +411,8 @@
       "values": {
         "us2y": 3.57,
         "us10y": 4.15,
-        "us30y": 4.78
+        "us30y": 4.78,
+        "putCall": 0.94
       }
     },
     {
@@ -3686,7 +420,8 @@
       "values": {
         "us2y": 3.64,
         "us10y": 4.21,
-        "us30y": 4.86
+        "us30y": 4.86,
+        "putCall": 1.05
       }
     },
     {
@@ -3694,7 +429,8 @@
       "values": {
         "us2y": 3.76,
         "us10y": 4.27,
-        "us30y": 4.88
+        "us30y": 4.88,
+        "putCall": 0.91
       }
     },
     {
@@ -3702,7 +438,8 @@
       "values": {
         "us2y": 3.73,
         "us10y": 4.28,
-        "us30y": 4.9
+        "us30y": 4.9,
+        "putCall": 0.9
       }
     },
     {
@@ -3710,7 +447,8 @@
       "values": {
         "us2y": 3.68,
         "us10y": 4.23,
-        "us30y": 4.86
+        "us30y": 4.86,
+        "putCall": 1.05
       }
     },
     {
@@ -3718,7 +456,8 @@
       "values": {
         "us2y": 3.68,
         "us10y": 4.2,
-        "us30y": 4.85
+        "us30y": 4.85,
+        "putCall": 1
       }
     },
     {
@@ -3726,7 +465,8 @@
       "values": {
         "us2y": 3.76,
         "us10y": 4.26,
-        "us30y": 4.88
+        "us30y": 4.88,
+        "putCall": 1.12
       }
     },
     {
@@ -3734,7 +474,8 @@
       "values": {
         "us2y": 3.79,
         "us10y": 4.25,
-        "us30y": 4.83
+        "us30y": 4.83,
+        "putCall": 0.84
       }
     },
     {
@@ -3742,7 +483,8 @@
       "values": {
         "us2y": 3.88,
         "us10y": 4.39,
-        "us30y": 4.96
+        "us30y": 4.96,
+        "putCall": 1.01
       }
     },
     {
@@ -3750,7 +492,8 @@
       "values": {
         "us2y": 3.83,
         "us10y": 4.34,
-        "us30y": 4.91
+        "us30y": 4.91,
+        "putCall": 0.99
       }
     },
     {
@@ -3758,7 +501,8 @@
       "values": {
         "us2y": 3.9,
         "us10y": 4.39,
-        "us30y": 4.94
+        "us30y": 4.94,
+        "putCall": 0.89
       }
     },
     {
@@ -3766,7 +510,8 @@
       "values": {
         "us2y": 3.84,
         "us10y": 4.33,
-        "us30y": 4.89
+        "us30y": 4.89,
+        "putCall": 0.99
       }
     },
     {
@@ -3774,7 +519,8 @@
       "values": {
         "us2y": 3.96,
         "us10y": 4.42,
-        "us30y": 4.93
+        "us30y": 4.93,
+        "putCall": 1
       }
     },
     {
@@ -3782,7 +528,8 @@
       "values": {
         "us2y": 3.88,
         "us10y": 4.44,
-        "us30y": 4.98
+        "us30y": 4.98,
+        "putCall": 0.96
       }
     },
     {
@@ -3790,7 +537,8 @@
       "values": {
         "us2y": 3.82,
         "us10y": 4.35,
-        "us30y": 4.91
+        "us30y": 4.91,
+        "putCall": 1.07
       }
     },
     {
@@ -3798,7 +546,8 @@
       "values": {
         "us2y": 3.79,
         "us10y": 4.3,
-        "us30y": 4.88
+        "us30y": 4.88,
+        "putCall": 0.96
       }
     },
     {
@@ -3806,7 +555,8 @@
       "values": {
         "us2y": 3.81,
         "us10y": 4.33,
-        "us30y": 4.91
+        "us30y": 4.91,
+        "putCall": 1.03
       }
     },
     {
@@ -3814,7 +564,8 @@
       "values": {
         "us2y": 3.79,
         "us10y": 4.31,
-        "us30y": 4.88
+        "us30y": 4.88,
+        "putCall": 1.05
       }
     },
     {
@@ -3830,7 +581,8 @@
       "values": {
         "us2y": 3.84,
         "us10y": 4.34,
-        "us30y": 4.89
+        "us30y": 4.89,
+        "putCall": 1.02
       }
     },
     {
@@ -3838,7 +590,8 @@
       "values": {
         "us2y": 3.81,
         "us10y": 4.33,
-        "us30y": 4.9
+        "us30y": 4.9,
+        "putCall": 0.96
       }
     },
     {
@@ -3846,7 +599,8 @@
       "values": {
         "us2y": 3.79,
         "us10y": 4.29,
-        "us30y": 4.89
+        "us30y": 4.89,
+        "putCall": 1.03
       }
     },
     {
@@ -3854,7 +608,8 @@
       "values": {
         "us2y": 3.78,
         "us10y": 4.29,
-        "us30y": 4.9
+        "us30y": 4.9,
+        "putCall": 0.89
       }
     },
     {
@@ -3862,7 +617,8 @@
       "values": {
         "us2y": 3.81,
         "us10y": 4.31,
-        "us30y": 4.91
+        "us30y": 4.91,
+        "putCall": 0.82
       }
     },
     {
@@ -3870,7 +626,8 @@
       "values": {
         "us2y": 3.78,
         "us10y": 4.3,
-        "us30y": 4.9
+        "us30y": 4.9,
+        "putCall": 0.87
       }
     },
     {
@@ -3878,7 +635,8 @@
       "values": {
         "us2y": 3.76,
         "us10y": 4.26,
-        "us30y": 4.87
+        "us30y": 4.87,
+        "putCall": 0.68
       }
     },
     {
@@ -3886,7 +644,8 @@
       "values": {
         "us2y": 3.76,
         "us10y": 4.29,
-        "us30y": 4.89
+        "us30y": 4.89,
+        "putCall": 0.78
       }
     },
     {
@@ -3894,7 +653,8 @@
       "values": {
         "us2y": 3.78,
         "us10y": 4.32,
-        "us30y": 4.93
+        "us30y": 4.93,
+        "putCall": 0.67
       }
     },
     {
@@ -3902,7 +662,8 @@
       "values": {
         "us2y": 3.71,
         "us10y": 4.26,
-        "us30y": 4.88
+        "us30y": 4.88,
+        "putCall": 0.66
       }
     },
     {
@@ -3910,7 +671,8 @@
       "values": {
         "us2y": 3.72,
         "us10y": 4.26,
-        "us30y": 4.88
+        "us30y": 4.88,
+        "putCall": 0.91
       }
     },
     {
@@ -3918,7 +680,8 @@
       "values": {
         "us2y": 3.78,
         "us10y": 4.3,
-        "us30y": 4.89
+        "us30y": 4.89,
+        "putCall": 0.94
       }
     },
     {
@@ -3926,7 +689,8 @@
       "values": {
         "us2y": 3.79,
         "us10y": 4.3,
-        "us30y": 4.9
+        "us30y": 4.9,
+        "putCall": 0.86
       }
     },
     {
@@ -3934,7 +698,8 @@
       "values": {
         "us2y": 3.83,
         "us10y": 4.34,
-        "us30y": 4.92
+        "us30y": 4.92,
+        "putCall": 0.91
       }
     },
     {
@@ -3942,7 +707,8 @@
       "values": {
         "us2y": 3.78,
         "us10y": 4.31,
-        "us30y": 4.91
+        "us30y": 4.91,
+        "putCall": 0.79
       }
     },
     {
@@ -3950,7 +716,8 @@
       "values": {
         "us2y": 3.78,
         "us10y": 4.35,
-        "us30y": 4.94
+        "us30y": 4.94,
+        "putCall": 0.86
       }
     },
     {
@@ -3958,7 +725,8 @@
       "values": {
         "us2y": 3.84,
         "us10y": 4.36,
-        "us30y": 4.94
+        "us30y": 4.94,
+        "putCall": 0.83
       }
     },
     {
@@ -3966,7 +734,8 @@
       "values": {
         "us2y": 3.92,
         "us10y": 4.42,
-        "us30y": 4.98
+        "us30y": 4.98,
+        "putCall": 0.93
       }
     },
     {
@@ -3974,7 +743,8 @@
       "values": {
         "us2y": 3.88,
         "us10y": 4.4,
-        "us30y": 4.98
+        "us30y": 4.98,
+        "putCall": 0.78
       }
     },
     {
@@ -3982,7 +752,8 @@
       "values": {
         "us2y": 3.88,
         "us10y": 4.39,
-        "us30y": 4.97
+        "us30y": 4.97,
+        "putCall": 0.76
       }
     },
     {
@@ -3990,7 +761,8 @@
       "values": {
         "us2y": 3.95,
         "us10y": 4.45,
-        "us30y": 5.02
+        "us30y": 5.02,
+        "putCall": 0.87
       }
     },
     {
@@ -3998,7 +770,8 @@
       "values": {
         "us2y": 3.93,
         "us10y": 4.43,
-        "us30y": 4.98
+        "us30y": 4.98,
+        "putCall": 0.84
       }
     },
     {
@@ -4006,7 +779,8 @@
       "values": {
         "us2y": 3.87,
         "us10y": 4.36,
-        "us30y": 4.94
+        "us30y": 4.94,
+        "putCall": 0.67
       }
     },
     {
@@ -4014,7 +788,8 @@
       "values": {
         "us2y": 3.92,
         "us10y": 4.41,
-        "us30y": 4.97
+        "us30y": 4.97,
+        "putCall": 0.8
       }
     },
     {
@@ -4022,7 +797,8 @@
       "values": {
         "us2y": 3.9,
         "us10y": 4.38,
-        "us30y": 4.95
+        "us30y": 4.95,
+        "putCall": 0.74
       }
     },
     {
@@ -4030,7 +806,8 @@
       "values": {
         "us2y": 3.95,
         "us10y": 4.42,
-        "us30y": 4.98
+        "us30y": 4.98,
+        "putCall": 0.74
       }
     },
     {
@@ -4038,7 +815,8 @@
       "values": {
         "us2y": 4,
         "us10y": 4.46,
-        "us30y": 5.03
+        "us30y": 5.03,
+        "putCall": 0.84
       }
     },
     {
@@ -4046,7 +824,8 @@
       "values": {
         "us2y": 3.98,
         "us10y": 4.46,
-        "us30y": 5.03
+        "us30y": 5.03,
+        "putCall": 0.73
       }
     },
     {
@@ -4054,7 +833,8 @@
       "values": {
         "us2y": 4,
         "us10y": 4.47,
-        "us30y": 5.02
+        "us30y": 5.02,
+        "putCall": 0.67
       }
     },
     {
@@ -4062,7 +842,8 @@
       "values": {
         "us2y": 4.09,
         "us10y": 4.59,
-        "us30y": 5.12
+        "us30y": 5.12,
+        "putCall": 0.93
       }
     },
     {
@@ -4070,7 +851,8 @@
       "values": {
         "us2y": 4.07,
         "us10y": 4.61,
-        "us30y": 5.14
+        "us30y": 5.14,
+        "putCall": 0.82
       }
     },
     {
@@ -4078,7 +860,8 @@
       "values": {
         "us2y": 4.13,
         "us10y": 4.67,
-        "us30y": 5.18
+        "us30y": 5.18,
+        "putCall": 0.84
       }
     },
     {
@@ -4086,7 +869,8 @@
       "values": {
         "us2y": 4.04,
         "us10y": 4.57,
-        "us30y": 5.11
+        "us30y": 5.11,
+        "putCall": 0.75
       }
     },
     {
@@ -4094,7 +878,8 @@
       "values": {
         "us2y": 4.08,
         "us10y": 4.57,
-        "us30y": 5.1
+        "us30y": 5.1,
+        "putCall": 0.83
       }
     },
     {
@@ -4102,7 +887,8 @@
       "values": {
         "us2y": 4.13,
         "us10y": 4.56,
-        "us30y": 5.07
+        "us30y": 5.07,
+        "putCall": 0.85
       }
     },
     {
@@ -4110,7 +896,8 @@
       "values": {
         "us2y": 4.01,
         "us10y": 4.5,
-        "us30y": 5.03
+        "us30y": 5.03,
+        "putCall": 0.82
       }
     },
     {
@@ -4118,7 +905,8 @@
       "values": {
         "us2y": 4,
         "us10y": 4.48,
-        "us30y": 5.01
+        "us30y": 5.01,
+        "putCall": 0.83
       }
     },
     {
@@ -4126,7 +914,8 @@
       "values": {
         "us2y": 3.99,
         "us10y": 4.45,
-        "us30y": 4.98
+        "us30y": 4.98,
+        "putCall": 0.74
       }
     },
     {
@@ -4134,7 +923,8 @@
       "values": {
         "us2y": 3.98,
         "us10y": 4.45,
-        "us30y": 4.99
+        "us30y": 4.99,
+        "putCall": 0.64
       }
     },
     {
@@ -4142,7 +932,8 @@
       "values": {
         "us2y": 4.05,
         "us10y": 4.47,
-        "us30y": 4.99
+        "us30y": 4.99,
+        "putCall": 0.77
       }
     },
     {
@@ -4150,7 +941,8 @@
       "values": {
         "us2y": 4.05,
         "us10y": 4.46,
-        "us30y": 4.97
+        "us30y": 4.97,
+        "putCall": 0.73
       }
     },
     {
@@ -4158,7 +950,8 @@
       "values": {
         "us2y": 4.08,
         "us10y": 4.49,
-        "us30y": 4.99
+        "us30y": 4.99,
+        "putCall": 0.83
       }
     },
     {
@@ -4166,7 +959,8 @@
       "values": {
         "us2y": 4.05,
         "us10y": 4.47,
-        "us30y": 4.97
+        "us30y": 4.97,
+        "putCall": 0.77
       }
     },
     {
@@ -4174,7 +968,8 @@
       "values": {
         "us2y": 4.17,
         "us10y": 4.55,
-        "us30y": 5.01
+        "us30y": 5.01,
+        "putCall": 0.97
       }
     },
     {
@@ -4182,7 +977,8 @@
       "values": {
         "us2y": 4.15,
         "us10y": 4.56,
-        "us30y": 5.03
+        "us30y": 5.03,
+        "putCall": 0.96
       }
     },
     {
@@ -4190,7 +986,8 @@
       "values": {
         "us2y": 4.13,
         "us10y": 4.53,
-        "us30y": 5.01
+        "us30y": 5.01,
+        "putCall": 0.96
       }
     },
     {
@@ -4198,7 +995,8 @@
       "values": {
         "us2y": 4.13,
         "us10y": 4.55,
-        "us30y": 5.03
+        "us30y": 5.03,
+        "putCall": 0.97
       }
     },
     {
@@ -4206,7 +1004,8 @@
       "values": {
         "us2y": 4.05,
         "us10y": 4.45,
-        "us30y": 4.95
+        "us30y": 4.95,
+        "putCall": 0.86
       }
     },
     {
@@ -4214,7 +1013,8 @@
       "values": {
         "us2y": 4.09,
         "us10y": 4.48,
-        "us30y": 4.97
+        "us30y": 4.97,
+        "putCall": 0.76
       }
     },
     {
@@ -4222,7 +1022,8 @@
       "values": {
         "us2y": 4.07,
         "us10y": 4.47,
-        "us30y": 4.97
+        "us30y": 4.97,
+        "putCall": 0.89
       }
     },
     {
@@ -4230,7 +1031,8 @@
       "values": {
         "us2y": 4.05,
         "us10y": 4.43,
-        "us30y": 4.93
+        "us30y": 4.93,
+        "putCall": 0.84
       }
     },
     {
@@ -4238,7 +1040,8 @@
       "values": {
         "us2y": 4.2,
         "us10y": 4.49,
-        "us30y": 4.93
+        "us30y": 4.93,
+        "putCall": 0.86
       }
     },
     {
@@ -4246,7 +1049,8 @@
       "values": {
         "us2y": 4.19,
         "us10y": 4.46,
-        "us30y": 4.9
+        "us30y": 4.9,
+        "putCall": 0.91
       }
     },
     {
@@ -4254,7 +1058,8 @@
       "values": {
         "us2y": 4.24,
         "us10y": 4.51,
-        "us30y": 4.95
+        "us30y": 4.95,
+        "putCall": 0.92
       }
     },
     {
@@ -4262,7 +1067,8 @@
       "values": {
         "us2y": 4.16,
         "us10y": 4.5,
-        "us30y": 4.94
+        "us30y": 4.94,
+        "putCall": 0.92
       }
     },
     {
@@ -4270,7 +1076,8 @@
       "values": {
         "us2y": 4.11,
         "us10y": 4.41,
-        "us30y": 4.86
+        "us30y": 4.86,
+        "putCall": 1.02
       }
     },
     {
@@ -4278,7 +1085,8 @@
       "values": {
         "us2y": 4.09,
         "us10y": 4.4,
-        "us30y": 4.86
+        "us30y": 4.86,
+        "putCall": 0.99
       }
     },
     {
@@ -4286,7 +1094,8 @@
       "values": {
         "us2y": 4.07,
         "us10y": 4.38,
-        "us30y": 4.87
+        "us30y": 4.87,
+        "putCall": 1.12
       }
     },
     {
@@ -4294,7 +1103,8 @@
       "values": {
         "us2y": 4.1,
         "us10y": 4.38,
-        "us30y": 4.86
+        "us30y": 4.86,
+        "putCall": 0.95
       }
     },
     {
@@ -4302,7 +1112,8 @@
       "values": {
         "us2y": 4.14,
         "us10y": 4.44,
-        "us30y": 4.91
+        "us30y": 4.91,
+        "putCall": 0.88
       }
     },
     {
@@ -4310,7 +1121,8 @@
       "values": {
         "us2y": 4.17,
         "us10y": 4.48,
-        "us30y": 4.97
+        "us30y": 4.97,
+        "putCall": 0.9
       }
     },
     {
@@ -4318,7 +1130,8 @@
       "values": {
         "us2y": 4.14,
         "us10y": 4.49,
-        "us30y": 4.98
+        "us30y": 4.98,
+        "putCall": 0.79
       }
     },
     {
@@ -4326,7 +1139,8 @@
       "values": {
         "us2y": 4.13,
         "us10y": 4.48,
-        "us30y": 4.99
+        "us30y": 4.99,
+        "putCall": 0.9
       }
     },
     {
@@ -4334,7 +1148,8 @@
       "values": {
         "us2y": 4.19,
         "us10y": 4.55,
-        "us30y": 5.05
+        "us30y": 5.05,
+        "putCall": 0.9
       }
     },
     {
@@ -4342,7 +1157,8 @@
       "values": {
         "us2y": 4.21,
         "us10y": 4.56,
-        "us30y": 5.06
+        "us30y": 5.06,
+        "putCall": 1.03
       }
     },
     {
@@ -4350,7 +1166,8 @@
       "values": {
         "us2y": 4.16,
         "us10y": 4.54,
-        "us30y": 5.05
+        "us30y": 5.05,
+        "putCall": 0.86
       }
     },
     {
@@ -4358,7 +1175,8 @@
       "values": {
         "us2y": 4.21,
         "us10y": 4.56,
-        "us30y": 5.06
+        "us30y": 5.06,
+        "putCall": 0.81
       }
     },
     {
@@ -4366,7 +1184,8 @@
       "values": {
         "us2y": 4.26,
         "us10y": 4.62,
-        "us30y": 5.1
+        "us30y": 5.1,
+        "putCall": 0.96
       }
     },
     {
@@ -4374,7 +1193,8 @@
       "values": {
         "us2y": 4.18,
         "us10y": 4.58,
-        "us30y": 5.08
+        "us30y": 5.08,
+        "putCall": 0.93
       }
     },
     {
@@ -4382,7 +1202,8 @@
       "values": {
         "us2y": 4.13,
         "us10y": 4.55,
-        "us30y": 5.08
+        "us30y": 5.08,
+        "putCall": 0.93
       }
     },
     {
@@ -4390,7 +1211,8 @@
       "values": {
         "us2y": 4.16,
         "us10y": 4.57,
-        "us30y": 5.09
+        "us30y": 5.09,
+        "putCall": 0.87
       }
     },
     {
@@ -4398,7 +1220,8 @@
       "values": {
         "us2y": 4.18,
         "us10y": 4.55,
-        "us30y": 5.06
+        "us30y": 5.06,
+        "putCall": 0.97
       }
     },
     {
@@ -4406,7 +1229,8 @@
       "values": {
         "us2y": 4.21,
         "us10y": 4.6,
-        "us30y": 5.11
+        "us30y": 5.11,
+        "putCall": 1
       }
     },
     {
@@ -4414,7 +1238,8 @@
       "values": {
         "us2y": 4.26,
         "us10y": 4.63,
-        "us30y": 5.13
+        "us30y": 5.13,
+        "putCall": 0.92
       }
     },
     {
@@ -4422,7 +1247,8 @@
       "values": {
         "us2y": 4.31,
         "us10y": 4.67,
-        "us30y": 5.15
+        "us30y": 5.15,
+        "putCall": 1.01
       }
     },
     {
@@ -4430,7 +1256,8 @@
       "values": {
         "us2y": 4.37,
         "us10y": 4.71,
-        "us30y": 5.17
+        "us30y": 5.17,
+        "putCall": 0.88
       }
     },
     {
@@ -4438,7 +1265,8 @@
       "values": {
         "us2y": 4.33,
         "us10y": 4.69,
-        "us30y": 5.16
+        "us30y": 5.16,
+        "putCall": 0.99
       }
     },
     {
@@ -4446,7 +1274,8 @@
       "values": {
         "us2y": 4.31,
         "us10y": 4.65,
-        "us30y": 5.12
+        "us30y": 5.12,
+        "putCall": 0.94
       }
     },
     {
@@ -4454,7 +1283,8 @@
       "values": {
         "us2y": 4.26,
         "us10y": 4.61,
-        "us30y": 5.09
+        "us30y": 5.09,
+        "putCall": 0.96
       }
     },
     {
@@ -4462,7 +1292,8 @@
       "values": {
         "us2y": 4.22,
         "us10y": 4.67,
-        "us30y": 5.2
+        "us30y": 5.2,
+        "putCall": 1.05
       }
     },
     {
@@ -4470,7 +1301,8 @@
       "values": {
         "us2y": 4.23,
         "us10y": 4.68,
-        "us30y": 5.21
+        "us30y": 5.21,
+        "putCall": 0.91
       }
     },
     {
@@ -4478,7 +1310,8 @@
       "values": {
         "us2y": 4.28,
         "us10y": 4.75,
-        "us30y": 5.27
+        "us30y": 5.27,
+        "putCall": 0.91
       }
     },
     {
@@ -4486,7 +1319,8 @@
       "values": {
         "us2y": 4.25,
         "us10y": 4.7,
-        "us30y": 5.23
+        "us30y": 5.23,
+        "putCall": 0.8
       }
     },
     {
@@ -4494,7 +1328,8 @@
       "values": {
         "us2y": 4.2,
         "us10y": 4.63,
-        "us30y": 5.18
+        "us30y": 5.18,
+        "putCall": 0.69
       }
     },
     {
@@ -4502,7 +1337,8 @@
       "values": {
         "us2y": 4.18,
         "us10y": 4.63,
-        "us30y": 5.17
+        "us30y": 5.17,
+        "putCall": 0.88
       }
     },
     {
@@ -4510,7 +1346,8 @@
       "values": {
         "us2y": 4.25,
         "us10y": 4.69,
-        "us30y": 5.22
+        "us30y": 5.22,
+        "putCall": 0.86
       }
     },
     {
@@ -4518,7 +1355,8 @@
       "values": {
         "us2y": 4.19,
         "us10y": 4.65,
-        "us30y": 5.19
+        "us30y": 5.19,
+        "putCall": 0.76
       }
     },
     {
@@ -4526,7 +1364,8 @@
       "values": {
         "us2y": 4.25,
         "us10y": 4.72,
-        "us30y": 5.25
+        "us30y": 5.25,
+        "putCall": 0.86
       }
     },
     {
@@ -4534,7 +1373,8 @@
       "values": {
         "us2y": 4.22,
         "us10y": 4.7,
-        "us30y": 5.24
+        "us30y": 5.24,
+        "putCall": 0.81
       }
     },
     {
@@ -4542,7 +1382,8 @@
       "values": {
         "us2y": 4.2,
         "us10y": 4.68,
-        "us30y": 5.24
+        "us30y": 5.24,
+        "putCall": 0.84
       }
     },
     {
@@ -4550,7 +1391,8 @@
       "values": {
         "us2y": 4.15,
         "us10y": 4.63,
-        "us30y": 5.21
+        "us30y": 5.21,
+        "putCall": 0.79
       }
     },
     {
@@ -4563,7 +1405,8 @@
         "wti": 82.4000015258789,
         "us2y": 4.17,
         "us10y": 4.68,
-        "us30y": 5.25
+        "us30y": 5.25,
+        "putCall": 0.77
       }
     },
     {
@@ -4576,7 +1419,8 @@
         "wti": 84.5,
         "us2y": 4.19,
         "us10y": 4.72,
-        "us30y": 5.31
+        "us30y": 5.31,
+        "putCall": 0.92
       }
     },
     {
@@ -4589,7 +1433,8 @@
         "wti": 84.94000244140625,
         "us2y": 4.19,
         "us10y": 4.71,
-        "us30y": 5.28
+        "us30y": 5.28,
+        "putCall": 0.95
       }
     },
     {
@@ -4602,7 +1447,8 @@
         "wti": 85.83000183105469,
         "us2y": 4.19,
         "us10y": 4.65,
-        "us30y": 5.19
+        "us30y": 5.19,
+        "putCall": 0.8
       }
     },
     {
@@ -4615,7 +1461,8 @@
         "wti": 87.83000183105469,
         "us2y": 4.19,
         "us10y": 4.69,
-        "us30y": 5.23
+        "us30y": 5.23,
+        "putCall": 0.78
       }
     },
     {
@@ -4628,7 +1475,8 @@
         "wti": 87.05999755859375,
         "us2y": 4.24,
         "us10y": 4.74,
-        "us30y": 5.27
+        "us30y": 5.27,
+        "putCall": 0.72
       }
     },
     {
@@ -4641,7 +1489,8 @@
         "wti": 85.01000213623047,
         "us2y": 4.24,
         "us10y": 4.7,
-        "us30y": 5.23
+        "us30y": 5.23,
+        "putCall": 0.91
       }
     },
     {
@@ -4654,7 +1503,8 @@
         "wti": 82.36000061035156,
         "us2y": 4.17,
         "us10y": 4.64,
-        "us30y": 5.17
+        "us30y": 5.17,
+        "putCall": 0.83
       }
     },
     {
@@ -4667,7 +1517,8 @@
         "wti": 82.2300033569336,
         "us2y": 4.19,
         "us10y": 4.66,
-        "us30y": 5.18
+        "us30y": 5.18,
+        "putCall": 0.87
       }
     },
     {
@@ -4680,7 +1531,8 @@
         "wti": 83.52999877929688,
         "us2y": 4.2,
         "us10y": 4.67,
-        "us30y": 5.19
+        "us30y": 5.19,
+        "putCall": 0.73
       }
     },
     {
@@ -4693,7 +1545,8 @@
         "wti": 83.4000015258789,
         "us2y": 4.34,
         "us10y": 4.73,
-        "us30y": 5.22
+        "us30y": 5.22,
+        "putCall": 0.84
       }
     },
     {
@@ -4707,7 +1560,8 @@
         "us10y": 4.75,
         "us30y": 5.25,
         "wti": 85.76000213623047,
-        "us2y": 4.34
+        "us2y": 4.34,
+        "putCall": 0.84
       }
     },
     {
@@ -4723,7 +1577,8 @@
         "us10y": 4.79,
         "us30y": 5.27,
         "wti": 90.22000122070312,
-        "arkRisk": 69.7
+        "arkRisk": 69.7,
+        "putCall": 0.95
       }
     },
     {
@@ -4739,7 +1594,8 @@
         "us10y": 4.79,
         "us30y": 5.27,
         "wti": 91.01000213623047,
-        "arkRisk": 70.8
+        "arkRisk": 70.8,
+        "putCall": 0.84
       }
     },
     {
@@ -4755,7 +1611,8 @@
         "us10y": 4.77,
         "us30y": 5.25,
         "wti": 91.30000305175781,
-        "arkRisk": 71.3
+        "arkRisk": 71.3,
+        "putCall": 0.76
       }
     },
     {
@@ -4771,7 +1628,8 @@
         "us10y": 4.78,
         "us30y": 5.24,
         "wti": 91.4800033569336,
-        "arkRisk": 68.9
+        "arkRisk": 68.9,
+        "putCall": 0.76
       }
     },
     {
@@ -4803,7 +1661,8 @@
         "us10y": 4.8,
         "us30y": 5.25,
         "wti": 93.02999877929688,
-        "arkRisk": 71.1
+        "arkRisk": 71.1,
+        "putCall": 0.8
       }
     },
     {
@@ -4819,7 +1678,8 @@
         "us10y": 4.83,
         "us30y": 5.28,
         "wti": 96.05000305175781,
-        "arkRisk": 73.4
+        "arkRisk": 73.4,
+        "putCall": 0.88
       }
     },
     {
@@ -4835,7 +1695,8 @@
         "us10y": 4.95,
         "us30y": 5.37,
         "wti": 102.4800033569336,
-        "arkRisk": 75.2
+        "arkRisk": 75.2,
+        "putCall": 0.83
       }
     },
     {
@@ -4851,7 +1712,8 @@
         "us10y": 4.96,
         "us30y": 5.35,
         "wti": 100.05000305175781,
-        "arkRisk": 78.1
+        "arkRisk": 78.1,
+        "putCall": 0.86
       }
     },
     {
@@ -4867,7 +1729,8 @@
         "us10y": 4.97,
         "us30y": 5.34,
         "marginMaintenance": 183.15,
-        "foreignFutures": -82658
+        "foreignFutures": -82658,
+        "putCall": 0.91
       }
     },
     {
