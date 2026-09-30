@@ -1,4 +1,4 @@
-const META={vix:['VIX 恐慌指數','', 'Yahoo Finance / CBOE'],putCall:['Put/Call Ratio','', 'CBOE'],marginMaintenance:['台灣融資維持率','%','市場估算'],foreignFutures:['外資台指期淨部位',' 口','TAIFEX'],dxy:['美元指數 DXY','','Yahoo Finance'],usdtwd:['USD/TWD','','TAIFEX'],gold:['黃金期貨','', 'Yahoo Finance'],us2y:['美債 2Y','%','U.S. Treasury'],us10y:['美債 10Y','%','U.S. Treasury'],us30y:['美債 30Y','%','U.S. Treasury'],wti:['Brent 原油','};
+const META={vix:['VIX 恐慌指數','', 'Yahoo Finance / CBOE'],putCall:['Put/Call Ratio','', 'CBOE'],marginMaintenance:['台灣融資維持率','%','市場估算'],foreignFutures:['外資台指期淨部位',' 口','TAIFEX'],dxy:['美元指數 DXY','','Yahoo Finance'],usdtwd:['USD/TWD','','TAIFEX'],gold:['黃金期貨','', 'Yahoo Finance'],us2y:['美債 2Y','%','U.S. Treasury'],us10y:['美債 10Y','%','U.S. Treasury'],us30y:['美債 30Y','%','U.S. Treasury'],wti:['Brent 原油','$','Yahoo Finance']};
 const WORKER_URL='https://market-risk-dashboard-api.tim800830.workers.dev/';
 let history=[],selected='marginMaintenance',range=7,arkRange=7,chart,arkChart,lastUpdatedAt=null,arkDisplayedValue=0,arkAnimation=null;
 const fmt=(n,d=2)=>Number.isFinite(n)?n.toLocaleString('zh-TW',{maximumFractionDigits:d,minimumFractionDigits:d}):'待資料';
