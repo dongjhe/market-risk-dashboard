@@ -1,5 +1,8 @@
 name: Update market data
 on:
+  push:
+    paths:
+      - 'scripts/update-market-data.mjs'
   workflow_dispatch:
     inputs:
       ark_value:
