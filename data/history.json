@@ -1763,7 +1763,8 @@
         "us30y": 5.35,
         "foreignFutures": -76351,
         "marginMaintenance": 183.92,
-        "putCall": 0.98
+        "putCall": 0.98,
+        "arkRisk": 76.5
       }
     },
     {
@@ -1778,7 +1779,8 @@
         "us30y": 5.29,
         "marginMaintenance": 183.94,
         "vix": 15.4399995803833,
-        "putCall": 0.79
+        "putCall": 0.79,
+        "arkRisk": 73.6
       }
     },
     {
@@ -1794,7 +1796,8 @@
         "foreignFutures": -76110,
         "marginMaintenance": 189.8,
         "vix": 14.8100004196167,
-        "putCall": 0.81
+        "putCall": 0.81,
+        "arkRisk": 70.4
       }
     },
     {
@@ -1809,7 +1812,8 @@
         "us10y": 4.96,
         "us30y": 5.29,
         "marginMaintenance": 191.44,
-        "putCall": 0.74
+        "putCall": 0.74,
+        "arkRisk": 67.2
       }
     },
     {
@@ -1824,7 +1828,8 @@
         "marginMaintenance": 193.12,
         "vix": 14.210000038146973,
         "dxy": 100.5999984741211,
-        "putCall": 0.78
+        "putCall": 0.78,
+        "arkRisk": 66.7
       }
     },
     {
@@ -1840,7 +1845,8 @@
         "gold": 4318.39990234375,
         "wti": 92.16000366210938,
         "foreignFutures": -76084,
-        "putCall": 0.86
+        "putCall": 0.86,
+        "arkRisk": 66.8
       }
     },
     {
@@ -1856,7 +1862,8 @@
         "us30y": 5.47,
         "foreignFutures": -77031,
         "marginMaintenance": 193.87,
-        "putCall": 0.8
+        "putCall": 0.8,
+        "arkRisk": 67.9
       }
     },
     {
@@ -1899,7 +1906,8 @@
         "us2y": 4.89,
         "us10y": 5.26,
         "us30y": 5.59,
-        "marginMaintenance": 191.81
+        "marginMaintenance": 191.81,
+        "arkRisk": 69.4
       }
     }
   ]
