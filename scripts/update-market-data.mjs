@@ -51,8 +51,9 @@ else{
   const yahooSeries=await Promise.all(Object.entries(symbols).map(async([key,symbol])=>[key,await yahooDaily(symbol,'3mo')]));
   // Rebuild corrected source fields from 2026-08-14 onward. Preserve manually entered arkRisk.
   const rebuildFrom='2026-08-14';
-  for(const r of byDate.values())if(r.date>=rebuildFrom)delete r.values.wti;
-  console.log(`Rebuilding corrected market fields from ${rebuildFrom}`);
+  const brentRows=yahooSeries.find(([key])=>key==='wti')?.[1]||[];
+  if(brentRows.length)for(const r of byDate.values())if(r.date>=rebuildFrom)delete r.values.wti;
+  console.log(`Refreshing corrected market fields from ${rebuildFrom}`);
   for(const [key,rows] of yahooSeries){for(const p of rows)ensure(p.date).values[key]=p.value;const last=rows.at(-1);if(last)console.log(`Yahoo completed ${key} ${last.date}=${last.value}`);}
   for(const p of cboeSeries)ensure(p.date).values.putCall=p.value;if(cboeSeries.length)console.log(`Cboe Total Put/Call updated ${cboeSeries[0].date} through ${cboeSeries.at(-1).date}`);
   const [treasury,ff,mm,fx]=await Promise.all([safe(treasurySeries,'Treasury yields'),safe(foreignFutures,'foreignFutures'),safe(taiwanMarginMaintenance,'marginMaintenance'),safe(taifexFxSeries,'TAIFEX USD/TWD')]);
