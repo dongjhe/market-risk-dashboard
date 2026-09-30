@@ -50,7 +50,16 @@ else{
   console.log(`Cboe incremental update: ${cboeStart} through ${cboeEnd} (${cboeSeries.length} rows)`);
   const yahooSeries=await Promise.all(Object.entries(symbols).map(async([key,symbol])=>[key,await yahooDaily(symbol,'3mo')]));
   // Rebuild corrected source fields from 2026-08-14 onward. Preserve manually entered arkRisk.
-  const rebuildFrom='2026-08-14';
+  const historicalBackfills={
+  '2026-08-28':{marginMaintenance:194.25,foreignFutures:-83655},
+  '2026-08-31':{marginMaintenance:192.25,foreignFutures:-82970},
+  '2026-09-17':{foreignFutures:-78674},
+  '2026-09-21':{foreignFutures:-74081},
+  '2026-09-22':{foreignFutures:-75568},
+  '2026-09-10':{marginMaintenance:189.15,foreignFutures:-83918}
+};
+for(const [date,values] of Object.entries(historicalBackfills))Object.assign(ensure(date).values,values);
+const rebuildFrom='2026-08-14';
   const brentRows=yahooSeries.find(([key])=>key==='wti')?.[1]||[];
   if(brentRows.length)for(const r of byDate.values())if(r.date>=rebuildFrom)delete r.values.wti;
   console.log(`Refreshing corrected market fields from ${rebuildFrom}`);
