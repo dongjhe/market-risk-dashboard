@@ -36,13 +36,20 @@ else{
   const genuineDates=records.filter(r=>Object.keys(r.values||{}).some(k=>k!=='putCall')).map(r=>r.date).sort();const genuineStart=genuineDates[0]||today;records=records.filter(r=>r.date>=genuineStart||Object.keys(r.values||{}).some(k=>k!=='putCall'));console.log(`Removing obsolete Cboe archive-only rows before ${genuineStart}`);
   const byDate=new Map(records.map(r=>[r.date,{date:r.date,values:{...(r.values||{})}}]));const ensure=d=>{if(!byDate.has(d))byDate.set(d,{date:d,values:{}});return byDate.get(d)};
   const nyToday=dateInZone(now,'America/New_York');const nyYesterday=new Date(`${nyToday}T12:00:00Z`);nyYesterday.setUTCDate(nyYesterday.getUTCDate()-1);const cboeEnd=nyYesterday.toISOString().slice(0,10);
-  const [yahooSeries,cboeSeries]=await Promise.all([Promise.all(Object.entries(symbols).map(async([key,symbol])=>[key,await yahooDaily(symbol,'3mo')])),cboeRecentSeries(genuineStart,cboeEnd)]);
+  // CBOE is slow when fetched day-by-day. Keep existing history and only fetch dates after the latest saved Put/Call value.
+  const savedPutCallDates=records.filter(r=>Number.isFinite(r.values?.putCall)).map(r=>r.date).sort();
+  const lastSavedPutCall=savedPutCallDates.at(-1);
+  const nextDate=d=>{const x=new Date(`${d}T12:00:00Z`);x.setUTCDate(x.getUTCDate()+1);return x.toISOString().slice(0,10)};
+  const cboeStart=lastSavedPutCall?nextDate(lastSavedPutCall):genuineStart;
+  const cboeSeries=cboeStart<=cboeEnd?await cboeRecentSeries(cboeStart,cboeEnd):[];
+  console.log(`Cboe incremental update: ${cboeStart} through ${cboeEnd} (${cboeSeries.length} rows)`);
+  const yahooSeries=await Promise.all(Object.entries(symbols).map(async([key,symbol])=>[key,await yahooDaily(symbol,'3mo')]));
   // Rebuild corrected source fields from 2026-08-14 onward. Preserve manually entered arkRisk.
   const rebuildFrom='2026-08-14';
   for(const r of byDate.values())if(r.date>=rebuildFrom){delete r.values.wti;delete r.values.usdtwd;}
   console.log(`Rebuilding corrected market fields from ${rebuildFrom}`);
   for(const [key,rows] of yahooSeries){for(const p of rows)ensure(p.date).values[key]=p.value;const last=rows.at(-1);if(last)console.log(`Yahoo completed ${key} ${last.date}=${last.value}`);}
-  for(const r of byDate.values())if(r.date>=genuineStart)delete r.values.putCall;for(const p of cboeSeries)ensure(p.date).values.putCall=p.value;if(cboeSeries.length)console.log(`Cboe Total Put/Call backfilled ${cboeSeries[0].date} through ${cboeSeries.at(-1).date}`);
+  for(const p of cboeSeries)ensure(p.date).values.putCall=p.value;if(cboeSeries.length)console.log(`Cboe Total Put/Call updated ${cboeSeries[0].date} through ${cboeSeries.at(-1).date}`);
   const [treasury,ff,mm,fx]=await Promise.all([safe(treasurySeries,'Treasury yields'),safe(foreignFutures,'foreignFutures'),safe(taiwanMarginMaintenance,'marginMaintenance'),safe(taifexFxSeries,'TAIFEX USD/TWD')]);
   if(treasury)for(const p of treasury){const v=ensure(p.date).values;v.us2y=p.us2y;v.us10y=p.us10y;v.us30y=p.us30y;}
   if(fx)for(const p of fx)ensure(p.date).values.usdtwd=p.value;
