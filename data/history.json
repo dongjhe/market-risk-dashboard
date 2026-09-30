@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-30T09:17:48.163Z",
+  "updatedAt": "2026-09-30T09:18:48.856Z",
   "records": [
     {
       "date": "2026-01-02",
@@ -1683,7 +1683,9 @@
         "us30y": 5.22,
         "putCall": 0.84,
         "usdtwd": 31.628,
-        "wti": 89.30999755859375
+        "wti": 89.30999755859375,
+        "marginMaintenance": 194.25,
+        "foreignFutures": -83655
       }
     },
     {
@@ -1698,7 +1700,9 @@
         "us2y": 4.34,
         "putCall": 0.84,
         "usdtwd": 31.666,
-        "wti": 90.48999786376953
+        "wti": 90.48999786376953,
+        "marginMaintenance": 192.25,
+        "foreignFutures": -82970
       }
     },
     {
@@ -1916,7 +1920,8 @@
         "arkRisk": 73.6,
         "putCall": 0.79,
         "usdtwd": 31.881,
-        "wti": 104.81999969482422
+        "wti": 104.81999969482422,
+        "foreignFutures": -78674
       }
     },
     {
@@ -1949,7 +1954,8 @@
         "arkRisk": 67.2,
         "putCall": 0.74,
         "usdtwd": 31.758,
-        "wti": 100.33999633789062
+        "wti": 100.33999633789062,
+        "foreignFutures": -74081
       }
     },
     {
@@ -1965,7 +1971,8 @@
         "arkRisk": 66.7,
         "putCall": 0.78,
         "usdtwd": 31.708,
-        "wti": 99.25
+        "wti": 99.25,
+        "foreignFutures": -75568
       }
     },
     {
