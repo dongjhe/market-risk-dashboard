@@ -19,10 +19,15 @@ async function taifexFxSeries(){
   const r=await fetch('https://www.taifex.com.tw/cht/3/dailyFXRate',{headers:{...headers,Accept:'text/html,application/xhtml+xml'}});
   if(!r.ok)throw new Error(`TAIFEX FX: ${r.status}`);
   const t=await r.text(),out=[];
-  const re=/(20\\d{2})[\\/-]?(\\d{2})[\\/-]?(\\d{2})[\\s\\S]{0,500}?([0-9]{2}\\.[0-9]{2,6})/g;
-  for(const m of t.matchAll(re)){const date=`${m[1]}-${m[2]}-${m[3]}`,value=num(m[4]);if(Number.isFinite(value)&&value>20&&value<50)out.push({date,value});}
+  // TAIFEX renders rows as YYYY/MM/DD followed by USD/TWD as the first numeric cell.
+  const re=/(20\d{2})\/(\d{2})\/(\d{2})[\s\S]{0,250}?([23]\d\.\d{2,6})/g;
+  for(const m of t.matchAll(re)){
+    const date=`${m[1]}-${m[2]}-${m[3]}`,value=num(m[4]);
+    if(Number.isFinite(value)&&value>20&&value<50)out.push({date,value});
+  }
   const unique=[...new Map(out.map(x=>[x.date,x])).values()].sort((a,b)=>a.date.localeCompare(b.date));
   if(!unique.length)throw new Error('TAIFEX USD/TWD rows not found');
+  console.log(`TAIFEX USD/TWD parsed ${unique.length} rows; latest ${unique.at(-1).date}=${unique.at(-1).value}`);
   return unique;
 }
 async function foreignFutures(){const rows=await json('https://openapi.taifex.com.tw/v1/MarketDataOfMajorInstitutionalTradersDetailsOfFuturesContractsBytheDate');if(!Array.isArray(rows))throw new Error('TAIFEX response is not an array');const row=rows.find(x=>String(x.ContractCode??'').trim()==='臺股期貨'&&String(x.Item??'').trim()==='外資及陸資');if(!row)throw new Error('TAIFEX 臺股期貨 / 外資及陸資 row not found');const value=num(row['OpenInterest(Net)']),date=normalizeDate(row.Date);if(!Number.isFinite(value)||!date)throw new Error('TAIFEX value/date missing');console.log(`TAIFEX foreign futures date=${date} net=${value}`);return {date,value};}
@@ -46,13 +51,13 @@ else{
   const yahooSeries=await Promise.all(Object.entries(symbols).map(async([key,symbol])=>[key,await yahooDaily(symbol,'3mo')]));
   // Rebuild corrected source fields from 2026-08-14 onward. Preserve manually entered arkRisk.
   const rebuildFrom='2026-08-14';
-  for(const r of byDate.values())if(r.date>=rebuildFrom){delete r.values.wti;delete r.values.usdtwd;}
+  for(const r of byDate.values())if(r.date>=rebuildFrom)delete r.values.wti;
   console.log(`Rebuilding corrected market fields from ${rebuildFrom}`);
   for(const [key,rows] of yahooSeries){for(const p of rows)ensure(p.date).values[key]=p.value;const last=rows.at(-1);if(last)console.log(`Yahoo completed ${key} ${last.date}=${last.value}`);}
   for(const p of cboeSeries)ensure(p.date).values.putCall=p.value;if(cboeSeries.length)console.log(`Cboe Total Put/Call updated ${cboeSeries[0].date} through ${cboeSeries.at(-1).date}`);
   const [treasury,ff,mm,fx]=await Promise.all([safe(treasurySeries,'Treasury yields'),safe(foreignFutures,'foreignFutures'),safe(taiwanMarginMaintenance,'marginMaintenance'),safe(taifexFxSeries,'TAIFEX USD/TWD')]);
   if(treasury)for(const p of treasury){const v=ensure(p.date).values;v.us2y=p.us2y;v.us10y=p.us10y;v.us30y=p.us30y;}
-  if(fx)for(const p of fx)ensure(p.date).values.usdtwd=p.value;
+  if(fx?.length)for(const p of fx)ensure(p.date).values.usdtwd=p.value;
   if(ff){for(const r of byDate.values())if(r.date>ff.date)delete r.values.foreignFutures;ensure(ff.date).values.foreignFutures=ff.value;}
   if(mm){for(const r of byDate.values())if(r.date>mm.date)delete r.values.marginMaintenance;ensure(mm.date).values.marginMaintenance=mm.value;}
   if(treasury?.length){const last=treasury.at(-1);for(const r of byDate.values())if(r.date>last.date){delete r.values.us2y;delete r.values.us10y;delete r.values.us30y;}}
