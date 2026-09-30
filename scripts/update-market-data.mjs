@@ -1,6 +1,6 @@
 import fs from 'node:fs/promises';
 const FILE='data/history.json';
-const symbols={vix:'%5EVIX',dxy:'DX-Y.NYB',usdtwd:'TWD%3DX',gold:'GC%3DF',wti:'CL%3DF'};
+const symbols={vix:'%5EVIX',dxy:'DX-Y.NYB',gold:'GC%3DF',wti:'BZ%3DF'};
 const headers={'User-Agent':'Mozilla/5.0 market-risk-dashboard/1.0','Accept':'application/json,text/plain,*/*'};
 const num=v=>{const n=Number(String(v??'').replace(/,/g,'').replace(/%/g,'').trim());return Number.isFinite(n)?n:null};
 const pick=(o,names)=>{for(const n of names)if(o?.[n]!=null&&o[n]!=='')return o[n];return null};
@@ -15,6 +15,16 @@ async function yahooDaily(symbol,range='1mo'){for(const host of ['query1.finance
 async function cboeTotalPutCall(date){const r=await fetch(`https://www.cboe.com/us/options/market_statistics/daily/?dt=${date}`,{headers:{...headers,Accept:'text/html,application/xhtml+xml'}});if(!r.ok)throw new Error(`Cboe ${date}: ${r.status}`);const text=await r.text();const plain=text.replace(/<script[\s\S]*?<\/script>/gi,' ').replace(/<style[\s\S]*?<\/style>/gi,' ').replace(/<[^>]+>/g,' ').replace(/&nbsp;|&#160;/gi,' ').replace(/\s+/g,' ');let m=plain.match(/TOTAL\s+PUT\s*\/\s*CALL\s+RATIO\s+([0-9]+(?:\.[0-9]+)?)/i);if(!m)m=text.match(/TOTAL(?:\s|&nbsp;|&#160;)*PUT\s*\/\s*CALL(?:\s|&nbsp;|&#160;)*RATIO[\s\S]{0,500}?([0-9]+\.[0-9]+)/i);const value=num(m?.[1]);if(!Number.isFinite(value)||value<=0||value>10)throw new Error('TOTAL PUT/CALL RATIO not found');return Number(value.toFixed(2));}
 async function cboeRecentSeries(startDate,endDate){const out=[];for(let d=new Date(`${startDate}T12:00:00Z`),end=new Date(`${endDate}T12:00:00Z`);d<=end;d.setUTCDate(d.getUTCDate()+1)){const dow=d.getUTCDay();if(dow===0||dow===6)continue;const date=d.toISOString().slice(0,10);const value=await safe(()=>cboeTotalPutCall(date),`Cboe ${date}`);if(Number.isFinite(value)){out.push({date,value});console.log(`Cboe Total P/C ${date}=${value}`);}}return out;}
 async function treasurySeries(){const year=new Date().getUTCFullYear(),r=await fetch(`https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=${year}`,{headers});if(!r.ok)throw new Error(`Treasury: ${r.status}`);const t=await r.text();const entries=[...t.matchAll(/<entry>([\s\S]*?)<\/entry>/gi)].map(m=>m[1]),out=[];for(const e of entries){const date=normalizeDate(e.match(/<d:NEW_DATE[^>]*>([^<]+)<\/d:NEW_DATE>/i)?.[1]||e.match(/<d:Date[^>]*>([^<]+)<\/d:Date>/i)?.[1]);const us2y=num(e.match(/<d:BC_2YEAR[^>]*>([0-9.]+)<\/d:BC_2YEAR>/i)?.[1]),us10y=num(e.match(/<d:BC_10YEAR[^>]*>([0-9.]+)<\/d:BC_10YEAR>/i)?.[1]),us30y=num(e.match(/<d:BC_30YEAR[^>]*>([0-9.]+)<\/d:BC_30YEAR>/i)?.[1]);if(date&&[us2y,us10y,us30y].every(Number.isFinite))out.push({date,us2y,us10y,us30y});}if(!out.length)throw new Error('Treasury yield entries not found');return out.sort((a,b)=>a.date.localeCompare(b.date));}
+async function taifexFxSeries(){
+  const r=await fetch('https://www.taifex.com.tw/cht/3/dailyFXRate',{headers:{...headers,Accept:'text/html,application/xhtml+xml'}});
+  if(!r.ok)throw new Error(\`TAIFEX FX: \${r.status}\`);
+  const t=await r.text(),out=[];
+  const re=/(20\\d{2})[\\/-]?(\\d{2})[\\/-]?(\\d{2})[\\s\\S]{0,500}?([0-9]{2}\\.[0-9]{2,6})/g;
+  for(const m of t.matchAll(re)){const date=\`\${m[1]}-\${m[2]}-\${m[3]}\`,value=num(m[4]);if(Number.isFinite(value)&&value>20&&value<50)out.push({date,value});}
+  const unique=[...new Map(out.map(x=>[x.date,x])).values()].sort((a,b)=>a.date.localeCompare(b.date));
+  if(!unique.length)throw new Error('TAIFEX USD/TWD rows not found');
+  return unique;
+}
 async function foreignFutures(){const rows=await json('https://openapi.taifex.com.tw/v1/MarketDataOfMajorInstitutionalTradersDetailsOfFuturesContractsBytheDate');if(!Array.isArray(rows))throw new Error('TAIFEX response is not an array');const row=rows.find(x=>String(x.ContractCode??'').trim()==='臺股期貨'&&String(x.Item??'').trim()==='外資及陸資');if(!row)throw new Error('TAIFEX 臺股期貨 / 外資及陸資 row not found');const value=num(row['OpenInterest(Net)']),date=normalizeDate(row.Date);if(!Number.isFinite(value)||!date)throw new Error('TAIFEX value/date missing');console.log(`TAIFEX foreign futures date=${date} net=${value}`);return {date,value};}
 function marketValue(marginRows,priceRows){const prices=new Map(priceRows.map(r=>[codeOf(r),closeOf(r)]).filter(([c,p])=>c&&Number.isFinite(p)&&p>0));let value=0,matched=0;for(const row of marginRows){const code=codeOf(row),bal=marginBalOf(row),close=prices.get(code);if(!code||!Number.isFinite(bal)||bal<=0||!Number.isFinite(close)||close<=0)continue;value+=bal*close;matched++;}console.log(`TWSE margin rows=${marginRows.length} price rows=${priceRows.length} matched=${matched}`);return {value,matched};}
 async function twseFinancingAmount(){const j=await json('https://www.twse.com.tw/exchangeReport/MI_MARGN?response=json&selectType=MS');if(j?.stat!=='OK')throw new Error(`TWSE credit statistics unavailable: ${j?.stat??'unknown'}`);const rows=j.creditList||j.tables?.find(t=>Array.isArray(t?.data)&&String(t?.title||'').includes('信用交易統計'))?.data||[],row=rows.find(r=>Array.isArray(r)&&String(r[0]).includes('融資金額')),amount=num(row?.[5]),date=normalizeDate(j.date);if(!Number.isFinite(amount)||amount<=0||!date)throw new Error('TWSE financing amount/date missing');return {amount,date};}
@@ -29,8 +39,8 @@ else{
   const [yahooSeries,cboeSeries]=await Promise.all([Promise.all(Object.entries(symbols).map(async([key,symbol])=>[key,await yahooDaily(symbol,'1mo')])),cboeRecentSeries(genuineStart,cboeEnd)]);
   for(const [key,rows] of yahooSeries){for(const p of rows)ensure(p.date).values[key]=p.value;const last=rows.at(-1);if(last)console.log(`Yahoo completed ${key} ${last.date}=${last.value}`);}
   for(const r of byDate.values())if(r.date>=genuineStart)delete r.values.putCall;for(const p of cboeSeries)ensure(p.date).values.putCall=p.value;if(cboeSeries.length)console.log(`Cboe Total Put/Call backfilled ${cboeSeries[0].date} through ${cboeSeries.at(-1).date}`);
-  const [treasury,ff,mm]=await Promise.all([safe(treasurySeries,'Treasury yields'),safe(foreignFutures,'foreignFutures'),safe(taiwanMarginMaintenance,'marginMaintenance')]);
-  if(treasury)for(const p of treasury){const v=ensure(p.date).values;v.us2y=p.us2y;v.us10y=p.us10y;v.us30y=p.us30y;}
+  const [treasury,ff,mm,fx]=await Promise.all([safe(treasurySeries,'Treasury yields'),safe(foreignFutures,'foreignFutures'),safe(taiwanMarginMaintenance,'marginMaintenance'),safe(taifexFxSeries,'TAIFEX USD/TWD')]);
+  if(treasury)for(const p of treasury){const v=ensure(p.date).values;v.us2y=p.us2y;v.us10y=p.us10y;v.us30y=p.us30y;}\n  if(fx)for(const p of fx)ensure(p.date).values.usdtwd=p.value;
   if(ff){for(const r of byDate.values())if(r.date>ff.date)delete r.values.foreignFutures;ensure(ff.date).values.foreignFutures=ff.value;}
   if(mm){for(const r of byDate.values())if(r.date>mm.date)delete r.values.marginMaintenance;ensure(mm.date).values.marginMaintenance=mm.value;}
   if(treasury?.length){const last=treasury.at(-1);for(const r of byDate.values())if(r.date>last.date){delete r.values.us2y;delete r.values.us10y;delete r.values.us30y;}}
