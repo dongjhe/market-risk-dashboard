@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-30T10:49:54.361Z",
+  "updatedAt": "2026-09-30T15:56:48.572Z",
   "records": [
     {
       "date": "2026-01-02",
@@ -2056,7 +2056,8 @@
       "date": "2026-09-30",
       "values": {
         "arkRisk": 69.4,
-        "usdtwd": 31.852
+        "usdtwd": 31.852,
+        "marginMaintenance": 190.7
       }
     }
   ]
