@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-30T08:51:25.829Z",
+  "updatedAt": "2026-09-30T09:17:48.163Z",
   "records": [
     {
       "date": "2026-01-02",
@@ -1822,7 +1822,7 @@
       "date": "2026-09-10",
       "values": {
         "vix": 17.84000015258789,
-        "marginMaintenance": null,
+        "marginMaintenance": 189.15,
         "foreignFutures": -83918,
         "dxy": 99.08999633789062,
         "gold": 4407.2998046875,
