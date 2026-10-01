@@ -10,13 +10,15 @@ on:
         required: false
         type: string
   schedule:
-    # 00:30 UTC = 08:30 Asia/Taipei, every day
-    - cron: '30 0 * * *'
+    # Primary morning refresh: previous U.S. market close, Taiwan time.
+    - cron: '30 8 * * *'
+      timezone: 'Asia/Taipei'
+    # Backup refresh in case GitHub drops/delays the primary scheduled event.
+    - cron: '47 8 * * *'
+      timezone: 'Asia/Taipei'
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 concurrency:
   group: market-data-update
@@ -25,9 +27,6 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -48,12 +47,3 @@ jobs:
             git commit -m "data: update market indicators"
             git push
           fi
-      - name: Configure Pages
-        uses: actions/configure-pages@v5
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: '.'
-      - name: Deploy Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
