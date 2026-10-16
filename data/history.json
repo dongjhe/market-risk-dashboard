@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-16T04:51:58.433Z",
+  "updatedAt": "2026-10-16T05:00:55.429Z",
   "records": [
     {
       "date": "2026-01-02",
@@ -2228,14 +2228,15 @@
       "values": {
         "dxy": 102,
         "gold": 4170.10009765625,
-        "wti": 105.91999816894531,
         "putCall": 0.8,
         "us2y": 4.77,
         "us10y": 5.1,
         "us30y": 5.43,
         "usdtwd": 32.265,
         "foreignFutures": -97582,
-        "marginMaintenance": 181.8
+        "marginMaintenance": 181.8,
+        "vix": 16.459999084472656,
+        "wti": 105.91999816894531
       }
     }
   ]
