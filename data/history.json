@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-08T06:42:42.598Z",
+  "updatedAt": "2026-11-09T07:03:11.420Z",
   "records": [
     {
       "date": "2026-01-02",
@@ -2485,6 +2485,12 @@
         "foreignFutures": -99930,
         "marginMaintenance": 151.92,
         "wti": 98.31999969482422
+      }
+    },
+    {
+      "date": "2026-11-09",
+      "values": {
+        "usdtwd": 32.89
       }
     }
   ]
