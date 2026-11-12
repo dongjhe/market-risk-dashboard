@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-11T07:10:00.394Z",
+  "updatedAt": "2026-11-12T07:35:23.845Z",
   "records": [
     {
       "date": "2026-01-02",
@@ -2515,14 +2515,27 @@
         "us10y": 4.98,
         "us30y": 5.35,
         "marginMaintenance": 167.98,
-        "wti": 91.48999786376953,
-        "foreignFutures": -103473
+        "foreignFutures": -103473,
+        "wti": 91.48999786376953
       }
     },
     {
       "date": "2026-11-11",
       "values": {
-        "usdtwd": 32.84
+        "usdtwd": 32.86,
+        "vix": 17.489999771118164,
+        "dxy": 102.91000366210938,
+        "gold": 4000.5,
+        "wti": 92.76000213623047,
+        "putCall": 0.92,
+        "foreignFutures": -104271,
+        "marginMaintenance": 174.17
+      }
+    },
+    {
+      "date": "2026-11-12",
+      "values": {
+        "usdtwd": 32.916
       }
     }
   ]
