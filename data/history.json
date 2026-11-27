@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-26T08:54:39.828Z",
+  "updatedAt": "2026-11-27T08:57:56.584Z",
   "records": [
     {
       "date": "2026-01-02",
@@ -2687,7 +2687,16 @@
     {
       "date": "2026-11-26",
       "values": {
-        "usdtwd": 32.947
+        "usdtwd": 32.947,
+        "vix": 26.799999237060547,
+        "foreignFutures": -106275,
+        "marginMaintenance": 159.67
+      }
+    },
+    {
+      "date": "2026-11-27",
+      "values": {
+        "usdtwd": 32.935
       }
     }
   ]
